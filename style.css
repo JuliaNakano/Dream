@@ -1,0 +1,165 @@
+
+.formulario{
+    background: #220000;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* arrumar o tamanho da caixa vermelha */
+.container{
+    background: #F70000;
+    border: 23px;
+    margin: 23px ;
+    max-width: 400px;
+    max-height:600px ;
+    width: 100%;
+    box-sizing: 0 3px 5px;
+
+}
+/*Odiei essa fonte, preciso encontrar outra*/
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif ;
+}
+/*centralzar esse formulario */
+.forcadastro{
+padding: 18px;
+}
+
+.formcad{
+  text-align: center;
+}
+.formcad input{
+
+    display: block;
+    width: 50%;
+    margin-left: 23%;
+    padding:  12px;
+    border: #220000;
+    position: relative;
+    background-color: #220000;
+    color: white;
+    font-size: 16px;
+}
+
+.formcad button{
+    background: black;
+    color: white;
+    width: 40%;
+    border-radius: 14px;
+    border: 12px;
+    padding: 12px ;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+    justify-items: center;
+}
+
+/*Quando criar o js arrumar a parte da mensagem de erro */
+.erro{
+color: wheat;
+border-radius:  23px, black;
+}
+
+.mensagem{
+
+    color: aliceblue;
+}
+
+/* Estilizacão da Nave*/
+
+
+/*Deixar a nave responsiva*/
+.navehome{
+
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Roboto",sans-serif;
+    margin-top: 20px;
+    align-items: center;
+    background: #000000;
+    color:white;
+    border:#F70000 solid;
+   
+
+}
+
+.naveitens{
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+}
+
+.naveitens li{
+  
+    padding-left: 50px;
+}
+ 
+.naveitens a{
+    color: white;
+}
+
+
+/*estilização dos botões*/
+
+.butonave button{
+
+    background: black;
+    border-bottom:23px;
+    border-radius: 9px;
+    padding-bottom: 12px;
+    font-size: 12px;
+    padding-right: 12px;
+}
+
+.butonave a{
+    color:white;
+    align-items: center;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+
+/* Estilizacão da Pagína Home*/
+
+.home{
+    background: #220000;
+}
+
+/* Estilização da pagina sobre*/
+.sobre{
+    background: black;
+    text-align: center;
+
+}
+
+.sobre_est{
+    width: 100%;
+    border-left: #F70000 2px solid;
+    border-right: #F70000 2px solid;
+}
+
+.sobre_est p{ 
+    color: white;
+    max-width: 500px;
+    max-height:700px;
+    width: 100%;
+    justify-content: center;
+    font-size: 23px;
+    margin-left: 50px;
+
+}
+.sobre_est h1{
+    color: white;
+    border:#F70000 3px  solid;
+}
+
+.sobre_est hr{
+    border:#F70000 solid;
+
+}
