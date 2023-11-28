@@ -1,0 +1,76 @@
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #220000;
+}
+
+/* Estilos para o menu de navegação */
+.navbar {
+    background-color: #f8f9fa; /* Cor de fundo do menu */
+  }
+  
+  .navbar-brand img {
+    width: 100px; /* Largura da imagem da logo */
+    height: auto; /* Altura automática (mantém proporção) */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333; /* Cor do texto dos links */
+    margin: 0 10px; /* Espaçamento entre os links */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f00; /* Cor do texto dos links ao passar o mouse */
+  }
+  
+  .navbar-toggler-icon {
+    color: #333; /* Cor do ícone do botão toggle */
+  }
+  
+.container {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color:#220000;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label, input, textarea {
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #220000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #220000;
+}
+
+.redes-links i{
+    color: #220000; /* Define a cor dos ícones */
+    margin-right: 5px;
+}
