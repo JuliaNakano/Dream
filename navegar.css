@@ -1,0 +1,136 @@
+
+
+.container {
+    display: flex;
+}
+@media (max-width: 600px) {
+.card {
+    background-color: wheat; /* cor de fundo mas n funcionando */
+    border: 1px solid black; /* cor da letra e não funcionando */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    left: 0px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box; /* Considera as bordas e margens no tamanho total do elemento */
+
+}}
+.navegar {
+    font-family: 'Lato', sans-serif; /* Aplica a fonte Lato */
+    color: #141414; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    margin-top: 100px; /* Espaçamento superior para centralizar */
+}
+  .navbar-nav {
+    display: flex; /* Para tornar os itens em linha */
+    align-items: center; /* Alinha os itens verticalmente */
+    color: white;
+}
+
+.navbar-nav .nav-item {
+color: white;
+margin-right: 20px; /* Espaço entre os itens (ajuste conforme necessário) */
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.card-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.6s;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(163, 151, 151);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.6s;
+}
+
+.card:hover .overlay {
+    transform: translateY(0);
+}
+.flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        perspective: 1000px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-color: black;
+        color: blanchedalmond;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: black;
+        color: blanchedalmond;
+        transform: rotateY(180deg);
+    }
+  .container-fluid img{ /*Imagem logo no nav*/
+    height: 100px;
+    width: 100px;
+  }
+  .navbar navbar-expand-lg bg-dark fixed-top{
+    background-color: beige;
+  }
+
+    #nav-navbarSupportedContent{
+    color:white;
+  }
+  /* Altera o fundo da barra de navegação para preto */
+        .navbar {
+        background-color: black;
+        color: #fff;
+        }
+
+        /* Altera a cor do texto para branco */
+        .navbar .navbar-nav .nav-link {
+        color: #fff;
+        font-size: larger;
+        }
+
