@@ -21,34 +21,44 @@ var	conta = [];
 
   //==========================================
   //Funcoes para Erros
+  function erro_ok() {
+  	//quando quer tirar a mensagem de erro
+	document.getElementById("saida").style.display = "none";
+  }
+
   function erro_ValorFaltando() {
   	//quando não preencheu tudo
 	document.getElementById("saida").style.display = "block";
 	document.getElementById("saida").innerHTML = "<h1>Preencha as lacunas!</h1>";
+	document.getElementById("saida").innerHTML += "<button onclick='erro_ok();' style='width: 30%; '>Ok</button>"
   }
 
   function erro_Email() {
   	//email em formato invalido
 	document.getElementById("saida").style.display = "block";
 	document.getElementById("saida").innerHTML = "<h1>Email Invalido!</h1>";
+	document.getElementById("saida").innerHTML += "<button onclick='erro_ok();' style='width: 30%; '>Ok</button>"
   }
 
   function erro_SenhaDiferente() {
   	//as duas senhas sao diferentes"
 	document.getElementById("saida").style.display = "block";
 	document.getElementById("saida").innerHTML = "<h1>As Senhas não são iguais!</h1>";
+	document.getElementById("saida").innerHTML += "<button onclick='erro_ok();' style='width: 30%; '>Ok</button>"
   }
 
   function erro_UsuarioNaoEncontrado(){
   	// Usuario do login nao encotrado
 	document.getElementById("saida").style.display = "block";
 	document.getElementById("saida").innerHTML = "<h1>Usuario errado ou não encontrado!</h1>";
+	document.getElementById("saida").innerHTML += "<button onclick='erro_ok();' style='width: 30%; '>Ok</button>"
   }
 
   function erro_SenhaErrada(){
   	// Usuario existe mas senha errada
 	document.getElementById("saida").style.display = "block";
 	document.getElementById("saida").innerHTML = "<h1>Senha incorreta!</h1>";
+	document.getElementById("saida").innerHTML += "<button onclick='erro_ok();' style='width: 30%; '>Ok</button>"
   }
 
 
@@ -64,6 +74,7 @@ var	conta = [];
   	// mostra que deu certo pro usuario
   	document.getElementById("saida").style.display = "block";
 	document.getElementById("saida").innerHTML = "<h1 style='color: #fff;'>Sua conta foi criada com sucesso!</h1>";
+	document.getElementById("saida").innerHTML += "<button onclick='pagLogin();' style='width: 30%; '>Fazer Login</button>"
   }
 
   function confereCadastro(){
