@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
 
 </head>
 <body class="home">
@@ -23,37 +28,71 @@
             <li> <a href="">Catalogo</a></li>
 
         </ul>
-
-        
     </div>
     <div class="butonave">
 
         <button> <a href="login.html">Login</a></button>
         <button> <a href="cadastro.html">Cadastre-se</a> </button>
     </div>
-    
     </nav>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide" alt="Primeiro Slide">
+
+
+    <div class="body_carrossel">
+    <main class=" main_carrocssel">
+      <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="img_carrossel/pexels-clem-onojeghuo-375885.jpg" alt="Foto 01">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="img_carrossel/pexels-donald-tong-109669.jpg" alt="Foto 02">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="img_carrossel/pexels-luis-quintero-2774556.jpg" alt="Foto 03">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="img_carrossel/pexels-pixabay-257385.jpg" alt="Foto 04">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-img">
+                <img src="img_carrossel/pexels-pixabay-33129.jpg" alt="Foto 05">
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Próximo</span>
-        </a>
+        
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
+    </main>
+  </div>
+  
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!--
+    <div class=" body_carrossel">
+      <div class="carrossel" >
+        <div class="conteiner_carrossel" id="img">
+          <img src="img_carrossel/pexels-clem-onojeghuo-375885.jpg" alt="">
+          <img src="img_carrossel/pexels-donald-tong-109669.jpg" alt="">
+          <img src="img_carrossel/pexels-luis-quintero-2774556.jpg" alt="">
+          <img src="img_carrossel/pexels-pixabay-257385.jpg" alt="">
+          <img src="img_carrossel/pexels-pixabay-33129.jpg" alt="">
+
+
+        </div>
+      </div>
+    </div>
+    -->
+
 
 </body>
 </html>
