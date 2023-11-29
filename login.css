@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Lato:400');
+
+body {
+/*texto*/
+  font-family: Lato, Inter, sans-serif;
+  background-color: #fff;
+/*formato*/
+  margin: 0;
+  height: 100vh;
+/*pra ter propriedades de flexbox*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*fundo*/
+  background-image: url('imgs/bg.jpg');
+  background-size: 90vw;
+}
+
+.escondido{
+/*nao mostra quem tem essa classe*/
+  display: none;
+}
+
+.container{
+/*formato*/
+  height: 90vh;
+  width: 40vw;
+  background-color: rgba(5%,5%,5%,75%);
+  backdrop-filter: blur(10px);
+  padding: 2%;
+  box-sizing: border-box;
+
+/*borda*/
+  border: 2px solid #fff;
+  border-radius: 30px;
+
+/*texto*/
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.campo{
+/*para os campos de entrada*/
+  position: relative;
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.campo p{
+/*texto dentro do campo*/
+  text-align: left;
+  left: 45%;
+  padding-left: 40px;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.campo input {
+/*caixa de entrada*/
+/*formato e posicao*/
+  bottom: 0;
+  right: 0;
+  margin-bottom: 5px;
+  height: 40px;
+  background-color: #eee;
+  border-radius: 0 30px 30px 0;
+  box-sizing: border-box;
+  width: 90%;
+  vertical-align: middle;
+  padding-left:40px;
+/*texto*/
+  font-family: Lato, Inter, sans-serif;
+  color: #222;
+  font-size: 20px;
+}
+
+.campo img {
+/*posicao*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  vertical-align: middle;
+  z-index: 999;
+/*formato*/
+  box-sizing: border-box;
+  border: 4px solid #000;
+  border-radius: 30px;
+  height: 50px;
+  background-color: #fff;
+  font-size: 20px;
+  pointer-events: none;
+}
+
+button {
+/*posicao e formato*/
+  margin-top: 10px;
+  height: 7%;
+  width: 30%;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 30px;
+/*texto*/
+  font-family: Lato, Inter, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+
+}
+
+.saida{
+/*formato*/
+  height: 20%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  display: inline-block; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+/*efeitos*/
+  border-radius: 0 0 30px 30px;
+  backdrop-filter: blur(10px);
+/*texto*/
+  color: #d33;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*-------------------------------------------------------*/
+/* tamanho diferente da fonte pra displays menores*/
+@media only screen and (max-width: 600px) {
+  .container {
+    font-size: 16px;
+    width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1400px) {
+  .container {
+    font-size: 16px;
+    width: 75vw;
+  }
+}

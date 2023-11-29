@@ -1,52 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
 
-    <link rel="stylesheet" href="./style.css">
-
-    
+	<!-- js e css -->
+	<script type="text/javascript" src="login.js"></script>
+	<link rel="stylesheet" type="text/css" href="login.css">
 </head>
-<body class=" formulario">
-    
-    <div class="container">
-        <h1>
-            Entrar
-        </h1>
-         
-        <form id="formcadastro" name="formcadastro"action="#" class="formcadastro">
 
-        <div class="formcad">
+<body>
 
-            <br/>
-            <label for="email"> </label>
-            <input type="text" name="email" id="email" placeholder="Email">
-            <br/>
+	<!-- container principal do menu -->
+	<div class="container" id="container">
+		<!-- essa parte aqui sera substituida -->
+	</div>
 
-            
+	<!-- ========================================================================================================== -->
+	<!-- esse div so serve pra ser copiado quando o usuario troca entre login e cadastro -->
+	<div class="escondido" id="login">
+		<h1>LOGIN</h1>
+		<div class="campo">
+			<p>Nome</p>
+			<img src="imgs/pessoa.png">
+			<input type="text" placeholder="Nome / Email" id="usuario"> <br>
+		</div>
 
-            <label for="senha"></label>
-            <input type="password"  id="senha" placeholder="Digite sua senha">
-            <br/>
+		<div class="campo">
+			<p>Senha</p>
+			<img src="imgs/cadeado.png">
+			<input type="password" placeholder="Senha" id="senha"> 
+		</div>
 
-            <a class="mensagem"> Esqueceu sua senha?</a>
-        
-           <br/>
-            <button type="submit"> Logar</button>
+		<br>
+		<button onclick="confereLogin();">Entrar</button>
+		<button onclick="pagCadastro();">Criar conta</button>
 
-            <br/>
-            <a href="cadastro.html" class="mensagem"> Cadastrar </a>
-            <div class="erro">
-            <a> Aqui vai a mensagem de erro</a>
-            </div>
-            
+		<div id="saida" class="saida">
+			<!-- os erros aparecem aqui, se tiver algum -->
+			<!-- mensagens pro usuario tbm -->
+		</div>
+	</div>
 
-           
-            
-        </div>
-    </form>
-</div>
+	<div class="escondido" id="cadastro">
+		<h1>NOVO CADASTRO</h1>
+
+		<!-- campo para o nome -->
+		<div class="campo">
+			<p>Nome</p>
+			<img src="imgs/pessoa.png">
+			<input type="text" placeholder="Nome Sobrenome" id="nome"> <br>
+		</div>
+
+		<!-- campo para o email -->
+		<div class="campo">
+			<p>Email</p>
+			<img src="imgs/email.png">
+			<input type="text" placeholder="SeuEmail@gmail.com" id="email"> <br>
+		</div>
+
+		<!-- campo para senha -->
+		<div class="campo">
+			<p>Senha</p>
+			<img src="imgs/cadeado.png">
+			<input type="password" placeholder="Senha" id="senha1"> 
+		</div>
+
+		<!-- confirmacao da senha -->
+		<div class="campo">
+			<p>Confirmar Senha</p>
+			<img src="imgs/cadeado.png">
+			<input type="password" placeholder="Repetir Senha" id="senha2"> 
+		</div>
+
+		<br>
+		<button onclick="confereCadastro();">Criar Conta</button>
+		<button onclick="pagLogin();">Voltar para Login</button>
+
+		<div id="saida" class="saida">
+			<!-- os erros aparecem aqui, se tiver algum -->
+			<!-- mensagens pro usuario tbm -->
+		</div>
+	</div>
+
 </body>
 </html>
