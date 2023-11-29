@@ -1,7 +1,7 @@
 // variaveis globais
 var	conta = [];
 
-window.onload = function pagCadastro() {
+  window.onload = function pagCadastro() {
 	pagLogin();
   };
 
@@ -24,31 +24,31 @@ window.onload = function pagCadastro() {
   function erro_ValorFaltando() {
   	//quando não preencheu tudo
 	document.getElementById("saida").style.display = "block";
-	document.getElementById("saida").innerHTML = "<h1>Preencha as lacunas!</h1> <p>Erro</p>";
+	document.getElementById("saida").innerHTML = "<h1>Preencha as lacunas!</h1>";
   }
 
   function erro_Email() {
   	//email em formato invalido
 	document.getElementById("saida").style.display = "block";
-	document.getElementById("saida").innerHTML = "<h1>Email Invalido!</h1> <p>Erro</p>";
+	document.getElementById("saida").innerHTML = "<h1>Email Invalido!</h1>";
   }
 
   function erro_SenhaDiferente() {
   	//as duas senhas sao diferentes"
 	document.getElementById("saida").style.display = "block";
-	document.getElementById("saida").innerHTML = "<h1>As Senhas não são iguais!</h1> <p>Erro</p>";
+	document.getElementById("saida").innerHTML = "<h1>As Senhas não são iguais!</h1>";
   }
 
   function erro_UsuarioNaoEncontrado(){
   	// Usuario do login nao encotrado
 	document.getElementById("saida").style.display = "block";
-	document.getElementById("saida").innerHTML = "<h1>Usuario errado ou não encontrado!</h1> <p>Erro</p>";
+	document.getElementById("saida").innerHTML = "<h1>Usuario errado ou não encontrado!</h1>";
   }
 
   function erro_SenhaErrada(){
   	// Usuario existe mas senha errada
 	document.getElementById("saida").style.display = "block";
-	document.getElementById("saida").innerHTML = "<h1>Senha incorreta!</h1> <p>Erro</p>";
+	document.getElementById("saida").innerHTML = "<h1>Senha incorreta!</h1>";
   }
 
 
