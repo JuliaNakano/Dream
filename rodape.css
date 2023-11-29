@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Lato:400');
+
+.rodape {
+/*config de posicao e tamanho*/
+  	position: fixed;
+  	height: 400px;
+  	width: 100%;
+  	bottom: 0;
+  	left: 0;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+    margin: 0;
+/*config de cores*/
+  	background-color: #111;
+/*config de texto*/
+  	font-family: Lato, Inter, sans-serif;;
+}
+
+.rodape-esquerda{
+/*config de posicao e tamanho */
+  	position: absolute;
+  	justify-content: center;
+  	left: 5%;
+	width: 25%;
+  	top: 10%;
+  	bottom: 10%;
+  	display: flex;
+    align-items: center;
+}
+
+.logo-ifmg {
+/*config de posicao e tamanho*/
+	width: 90%;
+  	left: 5%;
+}
+
+.rodape-centro {
+/*config de posicao e tamanho*/
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	width: 35%;
+  	height: 90%;
+  	text-align: center;
+}
+
+.logo-redondo {
+/*config de posicao e tamanho*/
+	margin: 2% 3%;
+  	height: 15%;
+	top: 5%;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.rodape-centro p {
+/*config de posicao e tamanho*/
+  	margin: 10px 0;
+/*config do texto*/
+  	color: #fff;
+  	font-size: 24px;
+  	font-weight: bold;
+}
+
+.rodape-direita{
+/*config de posicao e tamanho */
+  	position: absolute;
+  	justify-content: center;
+  	right: 5%;
+	width: 25%;
+  	top: 10%;
+  	bottom: 10%;
+  	display: flex;
+    align-items: center;
+}
+
+.rodape-direita p {
+/*config de posicao e tamanho*/
+	width: 80%;
+/*config de borda*/
+  	border: 3px solid #fff;
+  	border-radius: 25px;
+ 	box-sizing: border-box;
+  	padding: 5%;
+/*config do texto*/
+  	text-align: center;
+  	color: #fff;
+  	font-size: 20px;
+  	font-weight: bold;
+}
+
+/*-------------------------------------------------------*/
+/* tamanho diferente da fonte pra displays menores*/
+@media only screen and (max-width: 600px) {
+  .conteiner {
+    font-size: 16px;
+  }
+
+  .rodape-direita p {
+    font-size: 13px; 
+    word-wrap: break-word;
+  }
+
+  .rodape-centro p {
+    font-size: 18px;
+  }
+}
