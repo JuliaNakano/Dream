@@ -239,6 +239,34 @@
     margin: auto 0;
 }
 
+/*=================================================*/
+/*Logo do nav*/
+.cabecalho{
+/*parte de cima da pagina*/
+    width: 95vw;
+    height: 50vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-image: url('imgs/bg.jpg');
+    background-size: 40%;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 10px solid rgba( 0%, 0%, 0%, 50%);
+}
+
+.cabecalho h1{
+    position: absolute;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 100px;
+    bottom: 0;
+    color: #fff;
+    background: rgba( 0%, 0%, 0%, 50%);
+}
+
 .formulario{
     background: #220000;
     width: 100%;
@@ -319,7 +347,7 @@ border-radius:  23px, black;
     display: flex;
     justify-content: space-evenly;
     font-family: "Roboto",sans-serif;
-    margin-top: 20px;
+    margin: 8px;
     align-items: center;
     background: #000000;
     color:white;
