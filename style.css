@@ -232,6 +232,12 @@
   }
 }
 /*=================================================*/
+/*Logo do nav*/
+.navehome img{
+    height: 10vh;
+    width: auto;
+    margin: auto 0;
+}
 
 .formulario{
     background: #220000;
