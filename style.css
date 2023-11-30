@@ -253,11 +253,11 @@
     box-sizing: 0 3px 5px;
 
 }
-/*Odiei essa fonte, preciso encontrar outra*/
+
 h1{
     text-align: center;
     color: white;
-    font-family: 'Roboto', sans-serif ;
+    font-family: Lato, Inter, sans-serif;
 }
 /*centralzar esse formulario */
 .forcadastro{

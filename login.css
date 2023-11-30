@@ -2,19 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:700|Lato:400');
 
 body {
-/*texto*/
+  background: #220000;
   font-family: Lato, Inter, sans-serif;
-  background-color: #fff;
-/*formato*/
-  margin: 0;
-  height: 100vh;
-/*pra ter propriedades de flexbox*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-/*fundo*/
-  background-image: url('imgs/bg.jpg');
-  background-size: 90vw;
 }
 
 .escondido{
@@ -24,27 +13,33 @@ body {
 
 .container{
 /*formato*/
+  position: relative;
   min-height: 90vh;
-  width: 40vw;
-  background-color: rgba(5%,5%,5%,75%);
-  backdrop-filter: blur(10px);
+  width: 60vw;
+  margin: 2% auto;
   padding: 2%;
   box-sizing: border-box;
-
+  overflow: hidden;
+/*fundo*/
+  background: 
+    linear-gradient(to right, rgba(17, 17, 17, 1) , rgba(17, 17, 17, 0.5)),
+    url('imgs/bg.jpg');
+  background-size: cover;
 /*borda*/
-  border: 2px solid #fff;
-  border-radius: 20px;
+  border-radius: 5px;
+}
 
-/*texto*/
+.container h1,p {
+  margin: 0;
+  left: 0;
+  top: 0;
   color: #fff;
-  font-size: 20px;
-  text-align: center;
 }
 
 .campo{
 /*para os campos de entrada*/
   position: relative;
-  width: 75%;
+  width: 50%;
   display: inline-block;
   vertical-align: middle;
   margin: 20px 0px;
@@ -52,27 +47,26 @@ body {
 
 .campo p{
 /*texto dentro do campo*/
+  color: #fff;
   text-align: left;
   left: 45%;
   padding-left: 40px;
-  font-size: 15px;
+  font-size: 20px;
   margin: 0px;
 }
 
 .campo input {
 /*caixa de entrada*/
 /*formato e posicao*/
-  bottom: 0;
-  right: 0;
-  margin-bottom: 5px;
   height: 40px;
-  background-color: #eee;
+  width: 100%;
+  margin-left: 5%;
+  padding-left: 10%;
+  background-color: rgba(100%, 100%, 100%, 0.5);
+  outline: none;
   border-radius: 0 30px 30px 0;
   border: 0px;
   box-sizing: border-box;
-  width: 90%;
-  vertical-align: middle;
-  padding-left:40px;
 /*texto*/
   font-family: Lato, Inter, sans-serif;
   color: #222;
@@ -82,14 +76,12 @@ body {
 .campo img {
 /*posicao*/
   position: absolute;
-  bottom: 0;
-  left: 0;
-  vertical-align: middle;
   z-index: 998;
+  transform: translateY(-5px);
 /*formato*/
   box-sizing: border-box;
-  border: 0px solid #000;
-  border-radius: 30px;
+  border: 0px solid #fff;
+  border-radius: 50%;
   max-height: 50px;
   width: auto;
   background-color: #fff;
@@ -97,15 +89,15 @@ body {
   pointer-events: none;
 }
 
-button {
+button{
 /*posicao e formato*/
-  margin: 5px;
-  height: 5%;
   width: 50%;
+  height: 40px;
+  margin-bottom: 2%;
   background-color: #fff;
   box-sizing: border-box;
-  border-radius: 5px;
   border: 0px;
+  border-radius: 20px;
   transition: transform 0.2s;
 /*texto*/
   font-family: Lato, Inter, sans-serif;
@@ -118,19 +110,26 @@ button:hover {
     transform: scale(1.1);
 }
 
+.trocaPagina{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 3%;
+  font-family: Lato, Inter, sans-serif;
+  font-size: 20px;
+}
+
 .saida{
 /*formato*/
   min-height: 30%;
   box-sizing: border-box;
-  padding-left: 20px;
-  display: inline-block; 
+  padding: 0 10%;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 /*efeitos*/
   z-index: 999;
-  border-radius: 0 0 30px 30px;
   backdrop-filter: blur(5px);
 /*texto*/
   text-shadow: 0 0 10px rgba(0, 0, 0, 1);

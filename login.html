@@ -7,7 +7,9 @@
 
 	<!-- js e css -->
 	<script type="text/javascript" src="login.js"></script>
-	<link rel="stylesheet" type="text/css" href="login.css">
+	<!-- csss pra td -->
+    <link rel="stylesheet" href="rodape.css">
+	<link rel="stylesheet" href="login.css">
 </head>
 
 <body>
@@ -20,71 +22,106 @@
 	<!-- ========================================================================================================== -->
 	<!-- esse div so serve pra ser copiado quando o usuario troca entre login e cadastro -->
 	<div class="escondido" id="login">
-		<h1>LOGIN</h1>
-		<div class="campo">
-			<p>Usuário</p>
-			<img src="imgs/pessoa.png">
-			<input type="text" placeholder="Nome / Email" id="usuario"> <br>
-		</div>
+		<h1>Login</h1>
 
-		<div class="campo">
-			<p>Senha</p>
-			<img src="imgs/cadeado.png">
-			<input type="password" placeholder="Senha" id="senha"> 
-		</div>
-
-		<br>
-		<button onclick="confereLogin();">Entrar</button> <br>
-		<p style="margin-bottom: 0;">Não possui uma conta?</p>
-		<button onclick="pagCadastro();">Criar conta</button>
-
-		<div id="saida" class="saida">
-			<!-- os erros aparecem aqui, se tiver algum -->
-			<!-- mensagens pro usuario tbm -->
-		</div>
-	</div>
-
-	<div class="escondido" id="cadastro">
-		<h1>NOVO CADASTRO</h1>
-
-		<!-- campo para o nome -->
 		<div class="campo">
 			<p>Nome</p>
 			<img src="imgs/pessoa.png">
-			<input type="text" placeholder="Nome Sobrenome" id="nome"> <br>
+			<input type="text" id="usuario">
 		</div>
 
-		<!-- campo para o email -->
-		<div class="campo">
-			<p>Email</p>
-			<img src="imgs/email.png">
-			<input type="text" placeholder="SeuEmail@gmail.com" id="email"> <br>
-		</div>
-
-		<!-- campo para senha -->
 		<div class="campo">
 			<p>Senha</p>
 			<img src="imgs/cadeado.png">
-			<input type="password" placeholder="Senha" id="senha1"> 
+			<input type="password" id="senha">
 		</div>
 
-		<!-- confirmacao da senha -->
+		<div class="campo">
+			<button onclick="confereLogin();">Entrar</button>
+		</div>
+
+		<div class="trocaPagina">
+			<p>Não possui conta?</p>
+			<button onclick="pagCadastro();" style=" width: 100%;">Criar Conta</button>
+		</div>
+
+	</div>
+
+	<div class="escondido" id="cadastro">
+		<h1>Cadastro</h1>
+
+		<div class="campo">
+			<p>Nome</p>
+			<img src="imgs/pessoa.png">
+			<input type="text" id="nome">
+		</div>
+
+		<div class="campo">
+			<p>Email</p>
+			<img src="imgs/email.png">
+			<input type="text" id="email">
+		</div>
+
+		<div class="campo">
+			<p>Senha</p>
+			<img src="imgs/cadeado.png">
+			<input type="password" id="senha1">
+		</div>
+
 		<div class="campo">
 			<p>Confirmar Senha</p>
 			<img src="imgs/cadeado.png">
-			<input type="password" placeholder="Repetir Senha" id="senha2"> 
+			<input type="password" id="senha2">
 		</div>
 
-		<br>
-		<button onclick="confereCadastro();">Criar Conta</button> <br>
-		<p style="margin-bottom: 0;">Já possui uma conta?</p>
-		<button onclick="pagLogin();">Voltar para Login</button>
+		<div class="campo">
+			<button onclick="confereCadastro();">Entrar</button>
+		</div>
 
-		<div id="saida" class="saida">
-			<!-- os erros aparecem aqui, se tiver algum -->
-			<!-- mensagens pro usuario tbm -->
+		<div class="trocaPagina">
+			<p>Já possui uma conta?</p>
+			<button onclick="pagLogin();" style=" width: 100%;">Fazer Login</button>
 		</div>
 	</div>
+
+	<div class="saida" id="saida">
+	</div>
+
+
+
+<!-- ======================================================== -->
+  <!-- Rodape deve ficar no final -->
+    <footer class="rodape" id="rodape">
+      <!-- esquerda do rodape -->
+      <div class="rodape-esquerda">
+        <a href="https://www.formiga.ifmg.edu.br/"><img src="imgs/if-logo.png" class="logo-ifmg"></a>
+      </div>
+
+      <!-- centro do rodape -->
+      <div class="rodape-centro">
+        <!-- imagens pros contatos -->
+        <a href=""><img src="imgs/twitter.png" class="logo-redondo"></a>
+        <a href=""><img src="imgs/instagram.png" class="logo-redondo"></a>
+        <a href=""><img src="imgs/linkedin.png" class="logo-redondo"></a>
+        <p>Entre em contato conosco!</p>
+
+        <!-- clicar na logo faz voltar pro comeco da pagina -->
+        <a href="#"><img src="imgs/logo.png"></a>
+
+        <!-- membros do time -->
+        <p>
+          Júlia Nakano <br>
+          Maria Eduarda <br>
+          Victor Luis
+        </p>
+      </div>
+
+      <!-- direita do rodape -->
+      <div class="rodape-direita">
+        <p>Trabalho desenvolvido como exigência do componente curricular Desenvolvimento web</p>
+      </div>
+    </footer>
+<!-- ======================================================== -->
 
 </body>
 </html>
