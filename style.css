@@ -517,6 +517,39 @@ a{
     margin-top: 13px;
   }
 
+  .text_1{
+    display: flex;
+  }
+
+  .text{
+
+    margin-left: 3%;
+    margin-right: 7%;
+  }
+
+  .text_1 img{
+    height: 30%;
+    width: 25%;
+    margin-top: 3%;
+    border-radius: 6%;
+    margin-right: 4%;
+  }
+
+  .text h1{
+    color: white;
+    border: 1px white solid;
+    margin-left: 23px;
+    margin-right: 23px;
+    text-align: center;
+    margin-top: 13px;
+  }
+
+  .text p{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+  }
+
 
 
 
