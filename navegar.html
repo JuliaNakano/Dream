@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Catálogo | Dream</title>
+    <title>Navegar | Dream</title>
     <link rel="stylesheet" href="navegar.css">
-    <link rel="icon" href="dream.png"> 
+    <link rel="icon" href=".png"> 
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,45 +12,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-</head>        
-<body>  
-    
-<nav class="navbar navbar-expand-lg fixed-top" >
+
+</head> 
+
+<body> 
+    <!--MENU--> 
+    <!--
+    <nav class="navbar navbar-expand-lg fixed-top" >
         <div class="container-fluid" >      
-          <img src="letra.png" class="img-fluid" alt="Dream Logo">
+        <img src=".png">
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"> <big> Home </big></a>
+                </li>
+                <br>
+                <li class="nav-item">
+                <a class="nav-link" href="#"><big> Navegar </big></a>
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="C:\desenweb\cinema.js\pagina de contato\contato.html"> <big> Contato </big></a>
+                </li>
+
+            </ul> -->
+            <form class="d-flex" role="search"> <!--campo de pesquisar + scritp la embaixo-->
+        <input type="text" id="searchInput" name="searchInput" placeholder="Digite aqui para pesquisar" aria-label="Search" size="30">
+        <button type="button" class="btn btn-outline-light" onclick="search()">Buscar</button>
+        <ul id="results"></ul>
+    </form>
     
-          <img src="dream.png">
-
-
-   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="home.html"> <big>Home </big></a>
-        </li>
-        <br>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><big>Navegar </big></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="sobre.html"> <big> Sobre nós </big></a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pagina de contato/contato.html"> <big> Contato </big></a>
-        </li>
-
-
-      
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="pesquisar" type="search" placeholder="Pesquisar" aria-label="Search" size="30">
-        <button class="btn btn-outline-light" type="submit">Buscar</button>
-      </form>
     </div>
-  </div>
+</div>
 </nav>
+
+    <!--MENU--> 
+
 
 <div class="navegar">
     <br>
@@ -58,8 +61,7 @@
     <br> 
     <h5> Explore filmes e festivais cinematográficos para desvendar os encantos da sétima arte. </h>
 
-
-
+</div>
 <br>
 
   <div class="container">
@@ -71,39 +73,66 @@
 </div>
 <br>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <!-- Seus links para CSS, Bootstrap, etc. -->
-</head>
-<body>  
-    
-<!-- Seu código HTML existente -->
+<hr>
+<br>
+<br>
+
+   
+<!-- menu e card -->
 
 <div class="container">
     <div class="row">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="han.png" alt="coraline">
-                </div>
-                <div class="flip-card-back">
-                    <p>Dirigido por Henry Selick, Coraline é um filme de animação baseado no livro de Neil Gaiman. A história gira em torno de uma jovem chamada Coraline, que descobre uma porta secreta em sua nova casa, levando-a a uma versão alternativa de sua vida.</p>
-                    <img src="coraline-back.png" alt="coraline" width="300" height="200">
-                </div>
+        <div class="col-sm-4">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="coraline.png" alt="coraline" width="300" height="200"> 
+                Coraline, 2005 | Dir. Henry Selick<br>Genêro: Animação
+            </div>
+            <div class="flip-card-back">
+
+                A trama gira em torno, obviamente, de uma menina chamada Coraline, que acaba de se mudar com seus pais para uma casa antiga. E o maior desafio dela parece ser sobreviver à mesmice dos dias com a sua família — seus pais não dão a menor atenção para ela.
             </div>
         </div>
+    </div>
+        </div>
+    <div class="col-sm-4">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="sunrise.png" alt="coraline" width="300" height="200">
+                Before Sunrise, 1995 | Dir. Rick Linklater<br>Genêro: Romance
+            </div>
+            <div class="flip-card-back">
+                A história se passa em Viena, onde Jesse, um americano, e Celine, uma francesa, se conhecem casualmente em um trem. Jesse está indo para Viena pegar um voo de volta aos Estados Unidos, enquanto Celine está retornando a Paris depois de uma viagem à Europa.                
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-sm-4">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="logan.png" alt="coraline" width="300" height="200">
+                Logan, 2017 | Dir. James Mangold<br>Genêro: Ação
+            </div>
+            <div class="flip-card-back">
+                Em 2024, os mutantes estão em franco declínio, e as pessoas não sabem o real motivo. Uma organização está transformando as crianças mutantes em verdadeiras assassinas. Wolverine, cansado de tudo e a pedido de um cada vez mais enfraquecido Professor Xavier, precisa proteger a jovem e poderosa Laura Kinney.  </div>
+        </div>
+    </div>
+    </div>
 
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="saneamento.png" alt="coraline">
-                </div>
-                <div class="flip-card-back">
-                    <p>Dirigido por Henry Selick, Coraline é um filme de animação baseado no livro de Neil Gaiman. A história gira em torno de uma jovem chamada Coraline, que descobre uma porta secreta em sua nova casa, levando-a a uma versão alternativa de sua vida.</p>
-                    <img src="coraline-back.png" alt="coraline" width="300" height="200">
-                </div>
+    <div class="row my-5"> <!--  na mesma linha + my5 representa minha borda-->
+        <div class="col-sm-4"> <!---->
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front"> <!--gira para tras e mostra descrição-->
+                <img src="tim.png" alt="coraline" width="300" height="200">
+                Tim Maia, 2014 | Dir. Mauro Lima<br>Genêro: Drama
+            </div>
+            <div class="flip-card-back">
+                A vida problemática e a trajetória musical do cantor e compositor Tim Maia, da infância no Rio de Janeiro até a morte prematura, aos 55 anos.
             </div>
         </div>
           </body>
-</html>
+          </html>

@@ -1,60 +1,79 @@
-
-
+/* Define estilos para a classe "container" */
 .container {
-    display: flex;
+    display: flex; /* Exibe os elementos como um flex container */
+    flex-wrap: wrap; /* Permite que os elementos filhos quebrem linha conforme necessário */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os elementos filhos */
 }
-@media (max-width: 600px) {
-.card {
-    background-color: wheat; /* cor de fundo mas n funcionando */
-    border: 1px solid black; /* cor da letra e não funcionando */
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    position: relative;
-    left: 0px;
-    transition: transform 0.3s ease-in-out;
-    text-align: center;
-    overflow: hidden;
-    box-sizing: border-box; /* Considera as bordas e margens no tamanho total do elemento */
 
-}}
+/* Media query para telas com no máximo 600px de largura */
+@media (max-width: 600px) {
+    /* Estilos aplicados aos elementos com a classe "card" dentro da media query */
+    .card {
+        /* Cores para elementos com a classe "card" */
+        background-color: rgb(184, 182, 179); /* Cor de fundo dos elementos */
+        border: 1px solid black; /* Cor da borda dos elementos */
+        border-radius: 8px; /* Arredonda as bordas dos elementos */
+        padding: 20px; /* Espaçamento interno dos elementos */
+        margin: 10px; /* Margem ao redor dos elementos */
+        position: relative; /* Posição relativa aos elementos */
+        left: 0px; /* Posição inicial à esquerda */
+        transition: transform 0.3s ease-in-out; /* Animação de transição */
+        text-align: center; /* Alinhamento do texto */
+        overflow: hidden; /* Esconde o conteúdo que excede os limites */
+        box-sizing: border-box; /* Considera as bordas e margens no tamanho total do elemento */
+    }
+}
+
+/* Estilos para elementos com a classe "navegar" */
 .navegar {
-    font-family: 'Lato', sans-serif; /* Aplica a fonte Lato */
+    /* Estilos para o texto dentro dos elementos com a classe "navegar" */
+    font-family: 'Lato', sans-serif; /* Define a fonte do texto */
     color: #141414; /* Cor do texto */
     text-align: center; /* Alinhamento do texto */
     margin-top: 100px; /* Espaçamento superior para centralizar */
 }
-  .navbar-nav {
-    display: flex; /* Para tornar os itens em linha */
+
+/* Estilos para a barra de navegação */
+.navbar-nav {
+    display: flex; /* Exibe os itens da barra de navegação em linha */
     align-items: center; /* Alinha os itens verticalmente */
-    color: white;
+    color: white; /* Cor do texto */
 }
 
+/* Estilos para os itens da barra de navegação */
 .navbar-nav .nav-item {
-color: white;
-margin-right: 20px; /* Espaço entre os itens (ajuste conforme necessário) */
+    color: white; /* Cor do texto */
+    margin-right: 20px; /* Espaçamento entre os itens */
 }
 
+/* Estilos para elementos com a classe "card" */
 .card {
-    width: 200px;
-    height: 300px;
-    overflow: hidden;
-    perspective: 1000px;
+    /* Define as dimensões e propriedades dos elementos com a classe "card" */
+    width: 250px; /* Largura dos elementos */
+    height: 200px; /* Altura dos elementos */
+    overflow: hidden; /* Esconde o conteúdo que excede os limites */
+    perspective: 1000px; /* Define a perspectiva para efeitos 3D */
 }
 
+/* Estilos para o conteúdo dentro dos elementos com a classe "card" */
 .card-content {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: transform 0.6s;
+    /* Define as propriedades do conteúdo dentro dos elementos com a classe "card" */
+    width: 100%; /* Largura */
+    height: 100%; /* Altura */
+    position: absolute; /* Posição absoluta */
+    transition: transform 0.6s; /* Animação de transição */
 }
 
+/* Estilos para imagens dentro dos elementos com a classe "card" */
 .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* Define as propriedades das imagens dentro dos elementos com a classe "card" */
+    width: 100%; /* Largura */
+    height: 100%; /* Altura */
+    object-fit: cover; /* Ajuste da imagem para cobrir a área */
 }
 
+/* Estilos para a sobreposição nos elementos com a classe "card" ao passar o mouse */
 .overlay {
     position: absolute;
     bottom: 0;
@@ -72,7 +91,6 @@ margin-right: 20px; /* Espaço entre os itens (ajuste conforme necessário) */
     transform: translateY(0);
 }
 .flip-card {
-        background-color: transparent;
         width: 300px;
         height: 200px;
         perspective: 1000px;
@@ -97,19 +115,36 @@ margin-right: 20px; /* Espaço entre os itens (ajuste conforme necessário) */
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
-        background-color: black;
-        color: blanchedalmond;
     }
 
     .flip-card-front {
         background-color: #bbb;
-        color: black;
+        color: #0a0a0a;
     }
 
     .flip-card-back {
-        background-color: black;
-        color: blanchedalmond;
+        background-color: #201e1e;
+        color: #bbb;
+        height:auto;
         transform: rotateY(180deg);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 768px) { /*ajuste para outros dispositivos*/
+        .flip-card {
+            width: calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .flip-card {
+            width: calc(100% - 20px);
+        }
     }
   .container-fluid img{ /*Imagem logo no nav*/
     height: 100px;
@@ -133,4 +168,21 @@ margin-right: 20px; /* Espaço entre os itens (ajuste conforme necessário) */
         color: #fff;
         font-size: larger;
         }
+        .navbar-toggler-icon{
+            background-color:#504c4c; /*para ver a barrinha*/
+        }
+/* ... (seu CSS existente) ... */
 
+/* Ajustes para a seção "Filmes" */
+.col-md-4 {
+    background-color: black;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  
+  
+  
+  
