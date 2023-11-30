@@ -15,6 +15,7 @@
   font-family: 'Lato', 'Inter', sans-serif;
   color: #fff; /* Set text color */
   text-align: center;
+  overflow: hidden;
 }
 
 .rodape-esquerda{
@@ -53,6 +54,11 @@
 	top: 5%;
   border-radius: 50%;
   display: inline-block;
+}
+
+.rodape-centro img {
+	max-height: 35%;
+	width: auto;
 }
 
 .rodape-centro p {

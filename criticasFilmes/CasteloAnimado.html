@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criticas</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- css do rodape -->
+    <link rel="stylesheet" href="../rodape.css">
+
+    <script src="script.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+
+</head>
+
+<body class="home">
+    
+<!-- ======================================================== -->
+<!-- Nave -->
+    <nav class="navehome">
+
+    <div class="logo"> Colocar logo</div>
+
+    <div class= "links">
+
+        <ul class="naveitens">
+            <li> <a href="../home.html">Home</a></li>
+            <li> <a href="../sobre.html">Sobre </a></li>
+            <li> <a href="">Novidades</a></li>
+            <li> <a href="">Catalogo</a></li>
+
+        </ul>
+    </div>
+    <div class="butonave">
+
+        <button> <a href="../login.html">Login</a></button>
+        <button> <a href="../cadastro.html">Cadastre-se</a> </button>
+    </div>
+    </nav>
+<!-- ======================================================== -->
+<!-- Parte principal -->
+
+  <div class="critica-container">
+
+    <div class="critica-filme">
+      <!-- fica na parte de cima do container -->
+      <!-- mostra as partes principais -->
+      <img src="../imgs/casteloAnimadoFundo.png" class="critica-fundo">
+
+      <img src="../imgs/casteloAnimadoPoster.png" class="critica-poster">
+      <h1>O Castelo Animado</h1>
+
+      <div class="critica-gradient">
+        <!-- coloca um degrade -->
+      </div>
+    </div>
+
+    <div class="critica-sobre">
+      <!-- essa parte vai ter sinopse, classificacao, data de lancamento,etc -->
+      <div class="critica-sinopse">
+        <h1>Sinópse:</h1>
+        <p>
+          "O Castelo Animado" é uma obra-prima do Studio Ghibli, dirigida por Hayao Miyazaki. A trama segue Sophie, uma jovem transformada por um feitiço em uma idosa, que encontra um castelo mágico liderado pelo enigmático bruxo Howl. Ao explorar esse mundo fascinante, ela enfrenta desafios, descobre segredos e se envolve em uma trama de amor, amizade e magia. A animação deslumbrante do Studio Ghibli dá vida a uma narrativa que, além de sua beleza visual, aborda temas profundos de identidade, autoaceitação e coragem, oferecendo uma experiência cativante e emocional que ressoa com o público.
+        </p>
+      </div>
+      <div class="critica-info">
+        <h1>Sobre o filme:</h1>
+        <p>
+          Lançamento: 20/11/2004<br>
+          Genero: Fantasia<br>
+          Duração: 119min<br>
+          Direção: Hayao Miyazaki<br>
+          Baseado em:   O Castelo Animado, de Diana Wynne Jones <br>
+        </p>
+      </div>
+    </div>
+
+
+    <!-- nessa parte vai ficar os comentarios e reviews -->
+    <hr width="70%" style="margin: 2% auto;">
+    <h1> Comentarios:</h1>
+
+    <div class="critica-novoComentario">
+      <h4>Deixe seu comentário!</h4>
+      <textarea id="comentario" placeholder="Digite seu comentario aqui!"></textarea><br>
+      <button onclick="novoComentario();">Enviar</button>
+    </div>
+
+    <div class="critica-reviews" id="critica-reviews">
+      <div class="critica-comentario">
+        <h4>Pedro</h4>
+        <p>Uma obra-prima atemporal, O Castelo Animado combina uma animação deslumbrante com uma narrativa profunda sobre identidade e coragem.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Ana</h4>
+        <p>O Castelo Animado é uma obra de arte animada. A jornada de Sophie e as maravilhas do castelo de Howl criam uma atmosfera mágica. Uma experiência que encanta e aquece o coração.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Carlos</h4>
+        <p>O Castelo Animado é simplesmente incrível. A animação é impressionante, e a história é cativante. Os personagens, especialmente Sophie e Howl, são bem desenvolvidos. Recomendo fortemente, é daqueles filmes que você assiste várias vezes e sempre encontra algo novo.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Isabela</h4>
+        <p>Recomendo muito O Castelo Animado. A trama é envolvente, com reviravoltas inesperadas, e o visual é espetacular. Sophie e Howl são personagens que te conquistam, e o castelo móvel adiciona um toque único à história. Vale a pena cada minuto.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Jéssica</h4>
+        <p>Quero destacar O Castelo Animado, uma verdadeira joia em animação. A jornada de Sophie é envolvente, o visual é deslumbrante, e a emoção é genuína. Um filme que recomendo sem hesitação.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Raphael</h4>
+        <p>O Castelo Animado é um filme extraordinário. A qualidade da animação, a narrativa rica e os personagens bem desenvolvidos o tornam uma escolha excepcional para qualquer pessoa que aprecie uma boa história cinematográfica.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- ======================================================== -->
+  <!-- Rodape deve ficar no final -->
+    <footer class="rodape" id="rodape">
+      <!-- esquerda do rodape -->
+      <div class="rodape-esquerda">
+        <a href="https://www.formiga.ifmg.edu.br/"><img src="../imgs/if-logo.png" class="logo-ifmg"></a>
+      </div>
+
+      <!-- centro do rodape -->
+      <div class="rodape-centro">
+        <!-- imagens pros contatos -->
+        <a href=""><img src="../imgs/twitter.png" class="logo-redondo"></a>
+        <a href=""><img src="../imgs/instagram.png" class="logo-redondo"></a>
+        <a href=""><img src="../imgs/linkedin.png" class="logo-redondo"></a>
+        <p>Entre em contato conosco!</p>
+
+        <!-- clicar na logo faz voltar pro comeco da pagina -->
+        <a href="#"><img src="../imgs/logo.png"></a>
+
+        <!-- membros do time -->
+        <p>
+          Júlia Nakano <br>
+          Maria Eduarda <br>
+          Victor Luis
+        </p>
+      </div>
+
+      <!-- direita do rodape -->
+      <div class="rodape-direita">
+        <p>Trabalho desenvolvido como exigência do componente curricular Desenvolvimento web</p>
+      </div>
+    </footer>
+<!-- ======================================================== -->
+</body>
+</html>

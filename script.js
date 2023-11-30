@@ -1,4 +1,18 @@
+// =========================================================
+// funcoes para os comentarios
+function novoComentario() {
+    // Adiciona um novo comentario na pagina
+    var comentario = document.getElementById("comentario").value;
 
+    // confere se tá vazio
+    if (comentario.length != 0){
+        document.getElementById("critica-reviews").innerHTML = "<div class='critica-comentario'><h4>Usuário</h4><p>" + comentario + "</p></div>" + document.getElementById("critica-reviews").innerHTML
+    } else {
+        alert("Caixa de comentário está vazia!");
+    }
+}
+
+// =========================================================
 /*
 const imgs = document.getElementById("img");
 const img = document.querySelectorAll("#img img");

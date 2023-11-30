@@ -1,3 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Lato:400');
+@import url('https://fonts.googleapis.com/css?family=Rakkas:700|Rakkas:400');
+
+/*=================================================*/
+/*usados na pagina de critica*/
+
+.critica-container {
+/*formato*/
+    background: #111;
+    overflow: hidden;
+    width: 90vw;
+    height: auto;
+    margin: 1% auto;
+    box-sizing: border-box;
+    position: relative;
+/*texto*/
+    text-align: center;
+    font-family: Lato, Inter, sans-serif;
+    font-size: 20px;
+
+    z-index: 1;
+}
+
+.critica-filme {
+/*parte de cima da pagina*/
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.critica-fundo {
+/*foto de fundo*/
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 150%;
+    max-height: 150%;
+    z-index: -2;
+}
+
+.critica-gradient {
+/*degrade*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0));
+    z-index: -1;
+}
+
+.critica-poster {
+/*posicao*/
+    position: absolute;
+    margin: 1%;
+    left: 5%;
+    bottom: 0;
+/*formato*/
+    box-sizing: border-box;
+    width: 15%;
+    height: auto;
+    min-height: 0%;
+    border-radius: 10px;
+    border: 5px solid rgba(0, 0, 0, 50%);
+}
+
+.critica-filme h1{
+/*posicao*/
+    position: absolute;
+    margin: 1%;
+    left: 22%;
+    bottom: 2%;
+    color: #fff;
+    font-family: Lato, Inter, sans-serif;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+/*SOBRE O FILME*/
+.critica-sobre{
+/*parte central da pagina*/
+    width: 100%;
+    height: auto;
+    margin: 2% auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+}
+
+.critica-sobre h1 , h3{
+    color: #fff;
+    font-family: Lato, Inter, sans-serif;
+}
+
+.critica-sobre p{
+    color: #fff;
+    font-family: Lato, Inter, sans-serif;
+    font-size: 100%;
+}
+
+.critica-sinopse{
+    max-width: 50%;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.critica-info{
+    max-width: 40%;
+    height: auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+/*COMENTARIOS*/
+.critica-reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 2%;
+}
+
+.critica-reviews h1, h4, p{
+    color: #fff;
+    font-family: Lato, Inter, sans-serif;
+    margin: 0;
+}
+
+/*novo comentario*/
+.critica-novoComentario{
+    width: 60%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.critica-novoComentario textarea{
+    margin: 1% 0;
+    width: 20vw;
+    height: 5vh;
+    transition: width 0.3s ease;
+    background: #222;
+    color: #fff;
+    border: 0;
+    resize: none;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+    font-family: Lato, Inter, sans-serif;
+}
+
+.critica-novoComentario textarea:focus{
+    width: 70%;
+    height: 15vh;
+}
+
+.critica-novoComentario button {
+/*posicao e formato*/
+    margin: 1% 0;
+    width: 30%;
+    background-color: #222;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 0px;
+    transition: transform 0.2s;
+/*texto*/
+    font-family: Lato, Inter, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.critica-novoComentario button:hover {
+    transition: transform 0.3s;
+    transform: scale(1.1);
+}
+
+/*comentarios q ja existem*/
+.critica-comentario{
+    width: 30%;
+    height: auto;
+    margin: 2%;
+    padding: 1%;
+    text-align: left;
+    background: #222;
+    border-radius: 2px;
+}
+
+/*PARA TELAS PEQUENAS*/
+@media only screen and (max-width: 768px) {
+  .critica-poster {
+    width: 25%;
+  }
+
+  .critica-filme h1 {
+    left: 35%;
+    font-size: 175%; /* Adjust the font size for smaller screens */
+  }
+
+  .critica-sobre h1,
+  .critica-sobre p {
+    text-align: center;
+    flex-direction: column;
+    font-size: 90%; /* Adjust the font size for smaller screens */
+  }
+
+  .critica-sinopse,
+  .critica-info {
+    max-width: 100%;
+  }
+
+  .critica-novoComentario textarea {
+    width: 100%;
+    font-size: 16px; /* Adjust the font size for smaller screens */
+  }
+
+  .critica-novoComentario button {
+    width: 100%;
+    font-size: 14px; /* Adjust the font size for smaller screens */
+  }
+
+  .critica-comentario {
+    width: 100%;
+    font-size: 90%; /* Adjust the font size for smaller screens */
+  }
+}
+/*=================================================*/
 
 .formulario{
     background: #220000;
@@ -18,11 +252,11 @@
     box-sizing: 0 3px 5px;
 
 }
-/*Odiei essa fonte, preciso encontrar outra*/
+
 h1{
     text-align: center;
     color: white;
-    font-family: 'Roboto', sans-serif ;
+    font-family: Lato, Inter, sans-serif;
 }
 /*centralzar esse formulario */
 .forcadastro{
@@ -74,7 +308,7 @@ border-radius:  23px, black;
 
 /*Deixar a nave responsiva*/
 .navehome{
-
+    overflow: auto;
     display: flex;
     justify-content: space-evenly;
     font-family: "Roboto",sans-serif;
@@ -260,4 +494,30 @@ font-size:xx-small;
 
   width: 100%;
     min-height: 100vh;
+}
+.text p{
+color:#000;
+text-align: justify;
+
+}
+
+
+.text{
+ margin-right: 4%;
+  margin-left: 5% ;
+}
+
+.text_1{
+  display: flex;
+
+  
+}
+
+.text_1 img{
+
+margin-right: 12%;
+  margin-top: 23px;
+  height: 100%;
+  width: 23%;
+  box-sizing: 0 12px black;
 }
