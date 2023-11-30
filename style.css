@@ -244,6 +244,7 @@
 
 /* arrumar o tamanho da caixa vermelha */
 .container{
+    background: #F70000;
     border: 23px;
     margin: 23px ;
     max-width: 400px;
@@ -360,6 +361,43 @@ a{
 
 /* Estilizacão da Pagína Home*/
 
+.home{
+    background: #220000;
+}
+
+/* Estilização da pagina sobre*/
+.sobre{
+    background: black;
+    text-align: center;
+
+}
+
+.sobre_est{
+    width: 100%;
+    border-left: #F70000 2px solid;
+    border-right: #F70000 2px solid;
+}
+
+.sobre_est p{ 
+    color: white;
+    max-width: 500px;
+    max-height:700px;
+    width: 100%;
+    justify-content: center;
+    font-size: 23px;
+    margin-left: 50px;
+
+}
+.sobre_est h1{
+    color: white;
+    border:#F70000 3px  solid;
+}
+
+.sobre_est hr{
+    border:#F70000 solid;
+
+}
+
 
 /* Estilização do carrossel 
 .body_carrossel{
@@ -391,133 +429,50 @@ a{
 }
 */
 
-.container{
+.body_carrossel{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #fcfbff;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
 
-  margin-top: 5%;
-}
-.container .card{
-  background: #000;
-  border-radius: 18px;
- 
+  }
   
-}
-.container p{
-  color: white;
-}
-
-
-  .home_text {
-    margin-top: -80px;
-    font-family: 'Roboto', sans-serif;
-
+  
+  main {
+    height: 100vh;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+   
   }
-  .home_text h1{
-    color:black;
-    
+  
+
+  
+  .project-img  {
+    box-shadow: 0 1px 2px #0003;
+    width: 100%;
   }
-  .home_text p{
+  
+  .swiper {
+    height: 500px;
+  }
+  
+  .swiper-slide {
     text-align: center;
-  }
-
-  .card{
-    margin-top: 25%;
-    border-radius: 13px;
-    justify-content: center;
-    justify-items: center;
-    border: 5px black solid;
-    background: #000000;
     display: flex;
-
-
-  }
-  .card img{
-    margin-left: 14%;
-    margin-top: 23px;
-    height: 50%;
-    width: 75%;
-
-
-  }
-
-  .carousel{
-    display: flex;
+    align-items: center;
     justify-content: center;
-   
-
   }
-
-
-.carrossel_h1{
-    color:white;
-   
-    border: 2px solid white;
-    margin-left: 1%;
-    font-family: 'Roboto' sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-
-}
- 
-.carousel img{
-    border: 3px solid #000 ;
-}
-
-.carousel_item{
-  background: #000;
-}
-
-.carousel_item p{
-  color: white;
-}
-
-h2{
-
-
-text-align: center;
-font-size:xx-small;
-
-
-}
-
-.estilo_h2{
-  margin-top: 2%;
-  margin-bottom: 2%;
-  border: #000 solid 4px;
-  font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:black;
-  margin-left: 3%;
-  margin-right: 3%;
-  font-size: 23px;
-}
-.estilo_img img{
-
-  width: 100%;
-    min-height: 100vh;
-}
-.text p{
-color:#000;
-text-align: justify;
-
-}
-
-
-.text{
- margin-right: 4%;
-  margin-left: 5% ;
-}
-
-.text_1{
-  display: flex;
-
   
-}
-
-.text_1 img{
-
-margin-right: 12%;
-  margin-top: 23px;
-  height: 100%;
-  width: 23%;
-  box-sizing: 0 12px black;
-}
+  @media (max-width: 450px) {
+    .swiper {
+      height: 270px;
+    }
+  }

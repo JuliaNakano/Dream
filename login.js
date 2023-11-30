@@ -123,7 +123,8 @@ var	conta = [];
 
   	// mostra que deu certo pro usuario
   	document.getElementById("saida").style.display = "block";
-	document.getElementById("saida").innerHTML = "<h1 style='color: #fff;'>Logado com sucesso!</h1>";
+		document.getElementById("saida").innerHTML = "<h1 style='color: #fff;'>Logado com sucesso!</h1>";
+		document.getElementById("saida").innerHTML += "<a href='home.html'><button style='width: 30%; '>Voltar para o site</button></a> "
   }
 
   function confereLogin() {
