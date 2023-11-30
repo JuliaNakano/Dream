@@ -157,56 +157,19 @@ a{
 }
 */
 
-.body_carrossel{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    margin-top: -80px;
+.container{
 
-  }
-  
-  
-  main {
-    height: 100vh;
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-
-  
-<<<<<<< HEAD
-  img {
-    box-shadow: o 1px 1px black;
-    width: 75%;
-    {}
-    
-
-=======
-  .project-img  {
-    box-shadow: 0 1px 2px #0003;
-    width: 100%;
->>>>>>> ecc94cd9b530879b10ea0fd03744dfd1bb1965b5
-  }
-  
-  .swiper {
-    height: 500px;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  margin-top: 5%;
+}
+.container .card{
+  background: #000;
+  border-radius: 18px;
  
+  
+}
+.container p{
+  color: white;
+}
 
 
   .home_text {
@@ -229,6 +192,7 @@ a{
     justify-items: center;
     border: 5px black solid;
     background: #000000;
+    display: flex;
 
 
   }
@@ -238,20 +202,21 @@ a{
     height: 50%;
     width: 75%;
 
+
   }
+
   .carousel{
     display: flex;
     justify-content: center;
-
- 
+   
 
   }
 
 
 .carrossel_h1{
-    color:black;
+    color:white;
    
-    border: 2px solid #000;
+    border: 2px solid white;
     margin-left: 1%;
     font-family: 'Roboto' sans-serif;
     font-size: 18px;
@@ -265,4 +230,34 @@ a{
 
 .carousel_item{
   background: #000;
+}
+
+.carousel_item p{
+  color: white;
+}
+
+h2{
+
+
+text-align: center;
+font-size:xx-small;
+
+
+}
+
+.estilo_h2{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: #000 solid 4px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:black;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 23px;
+}
+.estilo_img img{
+
+  width: 100%;
+    min-height: 100vh;
 }

@@ -2,41 +2,57 @@
 <html lang="pt-br">
 
 <head>
-<<<<<<< HEAD
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <link rel="icon" href="dream.png"> 
+  <link rel="stylesheet" href="navegar.css">
+
   <link rel="stylesheet" href="style.css">
   <!-- css do rodape -->
   <link rel="stylesheet" href="rodape.css">
-
   <!-- link boostrap se quiserem baixar o repositorio depois -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-  <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-=======
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- css do rodape -->
-    <link rel="stylesheet" href="rodape.css">
-
-    <script src="script.js" defer></script>
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
->>>>>>> ecc94cd9b530879b10ea0fd03744dfd1bb1965b5
-
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body class="home">
+  <nav class="navbar navbar-expand-lg fixed-top" >
+    <div class="container-fluid" >      
+      <img src="letra.png" class="img-fluid" alt="Dream Logo">
+
+      <img src="">
 
 
-  <nav class="navehome">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a class="nav-link " aria-current="page" href="home.html"> <big>Home </big></a>
+    </li>
+    <br>
+    <li class="nav-item">
+      <a class="nav-link" href="navegar.html"><big>Navegar </big></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="pagina de contato/contato.html"> <big> Contato </big></a>
+    </li>
+
+
+  
+  </ul>
+  <button> <a href="login.html">Login</a></button>
+  <button> <a href="cadastro.html">Cadastre-se</a> </button>
+</div>
+</div>
+</nav>
+<!------ <nav class="navehome">
 
     <div class="logo"> Colocar logo</div>
 
@@ -52,12 +68,17 @@
     </div>
     <div class="butonave">
 
-      <button> <a href="login.html">Login</a></button>
-      <button> <a href="cadastro.html">Cadastre-se</a> </button>
+      
     </div>
-  </nav>
+  </nav> -->
+  <div class="estilo_img">
+    <img src="imgs/home.png" alt="">
+  </div>
+ 
 
   <!--Lançamento-->
+  <div class="estilo_h2"><h1>Lançamentos</h1></div>
+  
   <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -103,7 +124,6 @@
         <div class="container text-center">
           <div class="row">
             <div class="col">
-
               <!-- segundo card -->
               <div class="card" style="width: 18rem;">
                 <img src="imgs/lançamento05.png" class="card-img-top" alt="...">
@@ -139,6 +159,8 @@
           </div>
         </div>
       </div>
+
+
       <div class="carousel-item">
         <div class="container text-center">
           <div class="row">
@@ -178,6 +200,7 @@
         </div>
       </div>
     </div>
+
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -189,7 +212,10 @@
   </div>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
-<!-- mais procurados-->
+
+  <!-- mais procurados-->
+  <div class=" estilo_h2"><h2>Mais procurados</h2></div>
+  
 <div class=" carrossel">  
 <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
@@ -302,6 +328,7 @@
         </div>
       </div>
     </div>
+    
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -340,48 +367,11 @@
     </div>
     -->
 
-<<<<<<< HEAD
-  <!-- ======================================================== -->
-  <!-- Rodape deve ficar no final -->
-  <footer class="rodape" id="rodape">
-    <!-- esquerda do rodape -->
-    <div class="rodape-esquerda">
-      <a href="https://www.formiga.ifmg.edu.br/"><img src="imgs/if-logo.png" class="logo-ifmg"></a>
-    </div>
-
-    <!-- centro do rodape -->
-    <div class="rodape-centro">
-      <!-- imagens pros contatos -->
-      <a href=""><img src="imgs/twitter.png" class="logo-redondo"></a>
-      <a href=""><img src="imgs/instagram.png" class="logo-redondo"></a>
-      <a href=""><img src="imgs/linkedin.png" class="logo-redondo"></a>
-      <p>Entre em contato conosco!</p>
-
-      <!-- clicar na logo faz voltar pro comeco da pagina -->
-      <a href="#"><img src="imgs/logo.png" style="width: 50%;"></a>
-
-      <!-- membros do time -->
-      <p>
-        Júlia Nakano <br>
-        Maria Eduarda <br>
-        Victor Luis
-      </p>
-    </div>
-
-    <!-- direita do rodape -->
-    <div class="rodape-direita">
-      <p>Trabalho desenvolvido como exigência do componente curricular Desenvolvimento web</p>
-    </div>
-  </footer>
-  <!-- ======================================================== -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
 
 
 
 
-=======
+
 <!-- ======================================================== -->
   <!-- Rodape deve ficar no final -->
     <footer class="rodape" id="rodape">
@@ -389,7 +379,7 @@
       <div class="rodape-esquerda">
         <a href="https://www.formiga.ifmg.edu.br/"><img src="imgs/if-logo.png" class="logo-ifmg"></a>
       </div>
->>>>>>> ecc94cd9b530879b10ea0fd03744dfd1bb1965b5
+
 
       <!-- centro do rodape -->
       <div class="rodape-centro">
