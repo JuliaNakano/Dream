@@ -1,83 +1,315 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- css do rodape -->
+  <link rel="stylesheet" href="rodape.css">
+
+  <!-- link boostrap se quiserem baixar o repositorio depois -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
 </head>
+
 <body class="home">
-    
-    
-    <nav class="navehome">
+
+
+  <nav class="navehome">
 
     <div class="logo"> Colocar logo</div>
 
-    <div class= "links">
+    <div class="links">
 
-        <ul class="naveitens">
-            <li> <a href="home.html">Home</a></li>
-            <li> <a href="sobre.html">Sobre </a></li>
-            <li> <a href="">Novidades</a></li>
-            <li> <a href="">Catalogo</a></li>
+      <ul class="naveitens">
+        <li> <a href="home.html">Home</a></li>
+        <li> <a href="sobre.html">Sobre </a></li>
+        <li> <a href="">Novidades</a></li>
+        <li> <a href="">Catalogo</a></li>
 
-        </ul>
+      </ul>
     </div>
     <div class="butonave">
 
-        <button> <a href="login.html">Login</a></button>
-        <button> <a href="cadastro.html">Cadastre-se</a> </button>
+      <button> <a href="login.html">Login</a></button>
+      <button> <a href="cadastro.html">Cadastre-se</a> </button>
     </div>
-    </nav>
+  </nav>
 
+  <!--Lançamento-->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <!-- primeiro card -->
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/lançamento02.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="carrossel_h1">Guardiões da Galaxia 3</h1>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/lançamento03.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="carrossel_h1">Gato de Botas 2: O Último Pedido</h1>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
 
-    <div class="body_carrossel">
-    <main class=" main_carrocssel">
-      <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="project-img">
-                <img src="img_carrossel/pexels-clem-onojeghuo-375885.jpg" alt="Foto 01">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="project-img">
-                <img src="img_carrossel/pexels-donald-tong-109669.jpg" alt="Foto 02">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="project-img">
-                <img src="img_carrossel/pexels-luis-quintero-2774556.jpg" alt="Foto 03">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="project-img">
-                <img src="img_carrossel/pexels-pixabay-257385.jpg" alt="Foto 04">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="project-img">
-                <img src="img_carrossel/pexels-pixabay-33129.jpg" alt="Foto 05">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/lançamento04.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="carrossel_h1">Dungeons and Dragons: Honra entre Rebeldes </h1>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
               </div>
             </div>
           </div>
-        
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        </div>
       </div>
-    </main>
+
+      <div class="carousel-item">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+
+              <!-- segundo card -->
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/lançamento05.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="carrossel_h1"> John Wick Capítulo 4</h1>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/lançamento06.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="carrossel_h1"> A Morte do Demônio: A Ascensão</h1>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/lançamento07.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="carrossel_h1">Homem Aranha através do Aranhaverso </h1>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+
+              <!-- terceiro card -->
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/lançamento08.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="carrossel_h1">Super Marios Bros. - O Filme </h1>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/lançamento09.png.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="carrossel_h1">Barbie </h1>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/lançamento10.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="carrossel_h1">Oppenheimer </h1>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+<!-- mais procurados-->
+<div class=" carrossel">  
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <!-- primeiro card -->
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/mais_procurados01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/mais_procurados02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/mais_procurados03.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+
+              <!-- segundo card -->
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/mais_procurados04.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/mais_procurados05.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/mais_procurados06.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+
+              <!-- terceiro card -->
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/mais_procurados07.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/mais_procurados08.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="imgs/mais_procurados09.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+
   
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-    <!--
+
+
+ 
+    
+    
+      
+  
+      
+  <!--
     <div class=" body_carrossel">
       <div class="carrossel" >
         <div class="conteiner_carrossel" id="img">
@@ -93,6 +325,47 @@
     </div>
     -->
 
+  <!-- ======================================================== -->
+  <!-- Rodape deve ficar no final -->
+  <footer class="rodape" id="rodape">
+    <!-- esquerda do rodape -->
+    <div class="rodape-esquerda">
+      <a href="https://www.formiga.ifmg.edu.br/"><img src="imgs/if-logo.png" class="logo-ifmg"></a>
+    </div>
+
+    <!-- centro do rodape -->
+    <div class="rodape-centro">
+      <!-- imagens pros contatos -->
+      <a href=""><img src="imgs/twitter.png" class="logo-redondo"></a>
+      <a href=""><img src="imgs/instagram.png" class="logo-redondo"></a>
+      <a href=""><img src="imgs/linkedin.png" class="logo-redondo"></a>
+      <p>Entre em contato conosco!</p>
+
+      <!-- clicar na logo faz voltar pro comeco da pagina -->
+      <a href="#"><img src="imgs/logo.png" style="width: 50%;"></a>
+
+      <!-- membros do time -->
+      <p>
+        Júlia Nakano <br>
+        Maria Eduarda <br>
+        Victor Luis
+      </p>
+    </div>
+
+    <!-- direita do rodape -->
+    <div class="rodape-direita">
+      <p>Trabalho desenvolvido como exigência do componente curricular Desenvolvimento web</p>
+    </div>
+  </footer>
+  <!-- ======================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+
+
 
 </body>
+
 </html>
