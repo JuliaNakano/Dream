@@ -244,7 +244,7 @@
 
 /* arrumar o tamanho da caixa vermelha */
 .container{
-    background: #F70000;
+    background:#111;
     border: 23px;
     margin: 23px ;
     max-width: 400px;
@@ -423,8 +423,6 @@ a{
 }
 .img{
     object-fit: cover;
-    height: 50%;
-    width: 500px;
     
 }
 */
@@ -476,3 +474,44 @@ a{
       height: 270px;
     }
   }
+  
+
+  .carousel .card{
+    align-items: center;
+    background: white;
+    margin-top:  23px;
+
+  }
+  .carousel p{
+    color: black;
+    font-weight: bold;  
+    font-family: 'Lato' sans-serif;
+  }
+
+
+  .card h1{
+    border: solid 4px black;
+    color : black;
+    font-size:20px; ;
+    font-family: 'Roboto' sans-serif;
+    font-weight: bold;
+  }
+  .card img{
+    height: 30%;
+    width: 90%;
+    margin-top: 3%;
+    border-radius: 6%;
+    
+  }
+
+  .estilo_h2{
+    color: white;
+    border: 4px white solid;
+    text-align: center;
+    margin-top: 13px;
+  }
+
+
+
+
+
