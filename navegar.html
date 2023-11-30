@@ -61,34 +61,19 @@
     <br>
     <h1 > <big><b>NAVEGAR </b></big></h1>
     <br> 
-    <h5> Explore filmes, critícas e festivais cinematográficos para desvendar os encantos da sétima arte. </h>
-    </div>
+    <h5> Explore filmes e festivais cinematográficos para desvendar os encantos da sétima arte. </h>
 
-<br>
+</div>
 <br>
 
-<nav class="botoes">
-    <div class="container-fluid">
-        <div class="row">
-            <!--<div class="col-6 col-md-3"> col-6 define que essa coluna ocupará metade da largura do contêiner pai em telas pequenas e médias (col-6), enquanto a classe col-md-3 indica que ocupará 1/4 da largura em telas maiores (col-md-3).
-                <a class="btn btn-outline-dark btn-lg btn-block" href="#" role="button">Filmes Retrô</a>
-            </div> -->
-            <div class="row">
-                <div class="col-6 col-md-3">
-                    <div class="d-flex justify-content-center"> <!-- centralizar não pegou bem-->
-                        <a class="btn btn-outline-dark btn-lg btn-block" href="#" role="button">Críticas</a>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="d-flex justify-content-center">
-                        <a class="btn btn-outline-dark btn-lg btn-block" href="#" role="button">Em Exibição</a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+  <div class="container">
+    <div class="row"> <!--alinhar na mesma linha-->
+      <div class="col-md-4"> <big>Filmes </big> </div>
+        <div class="col-md-8"> <big>Em exibição</big> </div>
+
     </div>
-</nav>
+</div>
+<br>
 
 <hr>
 <br>
@@ -151,95 +136,5 @@
                 A vida problemática e a trajetória musical do cantor e compositor Tim Maia, da infância no Rio de Janeiro até a morte prematura, aos 55 anos.
             </div>
         </div>
-    </div>
-        </div>
-    <div class="col-sm-4">
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <img src="django.png" alt="coraline" width="300" height="200">
-                Django, 2012 | Dir. Quentin Tarantino<br>Genêro: Faroeste
-            </div>
-            <div class="flip-card-back">
-                No sul dos Estados Unidos, o ex-escravo Django faz uma aliança inesperada com o caçador de recompensas Schultz para caçar os criminosos mais procurados do país e resgatar sua esposa de um fazendeiro que força seus escravos a participar de competições mortais.            </div>
-        </div>
-    </div>
-    </div>
-    <div class="col-sm-4">
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <img src="enco.png" alt="coraline" width="300" height="200">
-                Encontros e Desencontros, 2004 | Dir. Sofia Coppola<br>Genêro: Romance
-            </div>
-            <div class="flip-card-back">
-                Bob Harris é uma estrela de cinema que está em Tóquio para fazer um comercial de uísque. Charlotte, por sua vez, está na cidade acompanhando seu marido, um fotógrafo de celebridades aficionado pelo seu trabalhado e que a deixa sozinha o tempo todo. Sofrendo com o horário e estranhos em uma terra estrangeira, Bob e Charlotte não conseguem dormir e se encontram, por acaso, no bar de um hotel de luxo. Em pouco tempo, encontram distração, fuga e compreensão um no outro entre as luzes de Tóquio.        </div>
-        </div>
-       </div>
-      </div>
-     </div>
-
-     </div>
-    </div>
-
-        <script>
-            // Cria um novo objeto URLSearchParams para obter os parâmetros da URL
-        const urlParams = new URLSearchParams(window.location.search);
-
-        // Obtém o valor do parâmetro 'searchInput' da URL
-        const searchText = urlParams.get('searchInput');
-
-        // Array de dados contendo informações sobre filmes ou obras
-        const data = [
-        "Tim Maia, 2014 | Dir. Mauro Lima",
-        "Encontros e Desencontros, 2004 | Dir. Sofia Coppola",
-        "Logan, 2017 | Dir. James Mangold ",
-        "Logan, 2017 | Dir. James Mangold",
-        "Before Sunrise, 1995 | Dir. Rick Linklater",
-        "Coraline, 2005 | Dir. Henry Selick"
-        ];
-
-        // Obtém o elemento HTML com o ID 'searchInput'
-        const searchInput = document.getElementById('searchInput');
-
-        // Obtém o elemento HTML com o ID 'results'
-        const resultsList = document.getElementById('results');
-
-        // Função para realizar a busca
-        function performSearch() {
-        // Obtém o texto digitado no campo de busca e converte para minúsculas
-        const searchText = searchInput.value.toLowerCase();
-
-        // Filtra os dados com base no texto digitado
-        const filteredData = data.filter(item => item.toLowerCase().includes(searchText));
-
-        // Exibe os resultados filtrados na página
-        displayResults(filteredData);
-        }
-
-        // Função para exibir os resultados na página
-        function displayResults(results) {
-        // Limpa a lista de resultados antes de exibir novos resultados
-        resultsList.innerHTML = '';
-
-        // Verifica se há resultados para exibir
-        if (results.length === 0) {
-            // Se não houver resultados, exibe uma mensagem de 'Nenhum resultado encontrado'
-            const noResultsItem = document.createElement('li');
-            noResultsItem.textContent = 'Nenhum resultado encontrado';
-            resultsList.appendChild(noResultsItem);
-        } else {
-            // Se houver resultados, cria elementos de lista para cada resultado e os exibe na página
-            results.forEach(item => {
-            const listItem = document.createElement('li');
-            listItem.textContent = item;
-            resultsList.appendChild(listItem);
-            });
-        }
-        }
-
-        // Adiciona um evento de input ao campo de busca para acionar a função de busca
-        searchInput.addEventListener('input', performSearch);
-        </script>
-</body>
-</html>
+          </body>
+          </html>

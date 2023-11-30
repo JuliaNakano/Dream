@@ -1,0 +1,29 @@
+/* Estilizando o corpo da página */
+.body {
+  font-family: Arial, sans-serif; /* Define a família da fonte para o corpo */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+}
+
+/* Estilizando a barra de navegação */
+.navbar {
+  background-color: #fff; /* Cor de fundo da barra de navegação */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra da barra de navegação */
+}
+
+/* Estilizando o link ativo */
+.nav-link.active {
+  font-weight: bold; /* Definindo o peso da fonte para o link ativo */
+  color: #220000; /* Cor do link ativo */
+}
+
+/* Estilizando os links do menu */
+.nav-link {
+  color: #555; /* Cor dos links do menu */
+}
+
+/* Estilizando a logo */
+.navbar-brand img {
+  width: 120px; /* Tamanho da imagem da logo */
+  height: auto; /* Altura automática para manter a proporção */
+}
