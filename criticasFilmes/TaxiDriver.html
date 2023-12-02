@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criticas | Dream</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- css do rodape -->
+    <link rel="stylesheet" href="../rodape.css">
+
+    <script src="../script.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+
+</head>
+
+<body class="home">
+    
+<!-- ======================================================== -->
+<!-- Nave -->
+    <nav class="navehome">
+
+    <div class="logo">
+      <a href="../home.html"><img src="../imgs/logo.png"></a>
+    </div>
+
+    <div class= "links">
+
+        <ul class="naveitens">
+            <li> <a href="../home.html">Home</a></li>
+            <li> <a href="../navegar.html">Navegar</a></li>
+            <li> <a href="../contato.html">Contato</a></li>
+
+        </ul>
+    </div>
+    <div class="butonave">
+
+        <button> <a href="../login.html">Login</a></button>
+    </div>
+    </nav>
+<!-- ======================================================== -->
+<!-- Parte principal -->
+
+  <div class="critica-container">
+
+    <div class="critica-filme">
+      <!-- fica na parte de cima do container -->
+      <!-- mostra as partes principais -->
+      <img src="../imgs/taxiFundo.png" class="critica-fundo">
+
+      <img src="../imgs/taxiPoster.png" class="critica-poster">
+      <h1>Taxi Driver</h1>
+
+      <div class="critica-gradient">
+        <!-- coloca um degrade -->
+      </div>
+    </div>
+
+    <div class="critica-sobre">
+      <!-- essa parte vai ter sinopse, classificacao, data de lancamento,etc -->
+      <div class="critica-sinopse">
+        <h1>Sinópse:</h1>
+        <p>
+          "Taxi Driver" é um mergulho arrebatador na mente perturbada de Travis Bickle, um solitário motorista de táxi veterano de guerra em uma Nova York decadente. Atormentado pela alienação e desencanto, Travis desenvolve uma obsessão platônica por Betsy, desencadeando uma espiral de violência. Armado e determinado a purificar a cidade da corrupção, ele se torna um vigilante em uma missão sangrenta. O filme é uma poderosa exploração da alienação social, destacando a fina linha entre herói e vilão, com performances marcantes e uma trilha sonora icônica de Bernard Herrmann.
+        </p>
+      </div>
+      <div class="critica-info">
+        <h1>Sobre o filme:</h1>
+        <p>
+          Lançamento: 22/03/1976 <br>
+          Genero: Drama, Crime<br>
+          Duração: 114min<br>
+          Direção: Martin Scorsese<br>
+        </p>
+      </div>
+    </div>
+
+
+    <!-- nessa parte vai ficar os comentarios e reviews -->
+    <hr width="70%" style="margin: 2% auto;">
+    <h1> Comentarios:</h1>
+
+    <div class="critica-novoComentario">
+      <h4>Deixe seu comentário!</h4>
+      <textarea id="comentario" placeholder="Digite seu comentario aqui!"></textarea><br>
+      <button onclick="novoComentario();">Enviar</button>
+    </div>
+
+    <div class="critica-reviews" id="critica-reviews">
+
+      <div class="critica-comentario">
+        <h4>Felipe</h4>
+        <p>Taxi Driver transcende o gênero de filme noir, tornando-se uma análise profunda da sociedade e da psique humana. Scorsese utiliza simbolismos visuais de maneira magistral, e a trilha sonora intensifica a atmosfera angustiante. Uma obra-prima indiscutível.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Maria</h4>
+        <p>Taxi Driver é uma obra-prima de Scorsese, um retrato impactante da solidão urbana. A atuação de Robert De Niro é visceral, e a trilha sonora intensifica a atmosfera sombria. É um filme que permanece relevante, explorando as complexidades da psique humana.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Eduardo</h4>
+        <p>A intensidade de Taxi Driver é avassaladora. A transformação de Travis Bickle é fascinante, e a cinematografia de Scorsese captura magistralmente a decadência da cidade. É um filme que desafia o espectador a questionar a moralidade e a justiça.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Larissa</h4>
+        <p>Taxi Driver é uma obra-prima atemporal. A narrativa sombria e a interpretação magistral de De Niro fazem deste um dos filmes mais impactantes da história do cinema. Scorsese consegue capturar a essência da alienação de forma inigualável.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Felipe</h4>
+        <p>A abordagem de Scorsese sobre a decadência urbana e a psicologia humana em Taxi Driver é extraordinária. A escolha estilística, combinada com a atuação brilhante de De Niro, cria uma experiência cinematográfica única e perturbadora.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- ======================================================== -->
+  <!-- Rodape deve ficar no final -->
+    <footer class="rodape" id="rodape">
+      <!-- esquerda do rodape -->
+      <div class="rodape-esquerda">
+        <a href="https://www.formiga.ifmg.edu.br/"><img src="../imgs/if-logo.png" class="logo-ifmg"></a>
+      </div>
+
+      <!-- centro do rodape -->
+      <div class="rodape-centro">
+        <!-- imagens pros contatos -->
+        <a href=""><img src="../imgs/twitter.png" class="logo-redondo"></a>
+        <a href=""><img src="../imgs/instagram.png" class="logo-redondo"></a>
+        <a href=""><img src="../imgs/linkedin.png" class="logo-redondo"></a>
+        <p>Entre em contato conosco!</p>
+
+        <!-- clicar na logo faz voltar pro comeco da pagina -->
+        <a href="#"><img src="../imgs/logo.png"></a>
+
+        <!-- membros do time -->
+        <p>
+          Júlia Nakano <br>
+          Maria Eduarda <br>
+          Victor Luis
+        </p>
+      </div>
+
+      <!-- direita do rodape -->
+      <div class="rodape-direita">
+        <p>Trabalho desenvolvido como exigência do componente curricular Desenvolvimento web</p>
+      </div>
+    </footer>
+<!-- ======================================================== -->
+</body>
+</html>
