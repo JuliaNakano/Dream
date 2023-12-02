@@ -1,0 +1,232 @@
+:root{
+    --primary: #220000;
+    --secondary: #f8f0f0;
+    --dark: #000000;
+    --light: #f3f3f3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: #220000;
+
+}
+body{ 
+    font-family: monstserrat, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+
+}
+.card{
+    padding: 5px;
+    margin: 1px auto 0;
+    width: 400px;
+    height: 500px;
+    bottom: 15px; /* Ajuste a posição vertical conforme necessário */
+    left: 50%; /* Coloca o cartão no centro horizontal */
+    transform: translateX(-50%); /* Corrige a posição para o centro horizontal */
+    z-index: 1;
+}
+
+.card video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo da classe card */
+}
+
+
+.card__inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s; /* transição da mudança do card*/
+    transform-style: preserve-3d; /* mover o card*/
+    cursor: pointer; /*clicavel */
+    position: relative;
+}
+.card__face--front img,
+.fundo img {
+  height: 590px; /* Defina a altura desejada para as imagens */
+  width: auto; /* Mantenha a largura proporcional à altura */
+  object-fit: cover; /* Garante que a imagem cubra todo o espaço disponível */
+}
+
+
+.card__inner.is-flipped{
+    transform: rotateY(180deg) /* angulo de rotação */
+}
+.card__face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 3px 18 px 30px rgba(207, 205, 205, 0.2);
+}
+.card__face--front{
+    background-image:linear-gradient(to bottom right, var(--primary), var(--secondary));
+    display: flex; /* centro-meio*/
+    align-items: center;
+    justify-content: center;
+}
+.card__face--front h2{
+    color: #fff;
+    font-size: 32px;
+}
+.card__face--back {
+    background-color: var(--light);
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+    font-size: 24px;
+    border-radius: px;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 3px 18px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card__content{
+    width: 100%;
+    height:100%;
+}
+.card__header{
+    position: relative;
+    padding: 30px 30px 40px;
+}
+.card__header:after{
+    content: ''; /* conteudo vazio*/
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 0;
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary)115%);
+}
+.fundo{
+    display:flex;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto 30px;
+    border-radius: 120%;
+    background-color: #fff;
+    border: 5px solid #fff;
+    object-fit: cover; /*adequando a img */
+}
+.card__header h2{
+    color:#fff;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+.card__body{
+    padding: 30px;
+}
+.card__body h3{ 
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.card__body p{
+    color: var(--dark);
+    font-size: 13px;
+    line-height: 1.5;
+}
+/* Altera o fundo da barra de navegação para preto */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.10); /*deixa transparente*/
+    }
+
+    /* Altera a cor do texto para branco */
+    .navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff; /* Defina a cor do texto desejada */
+    padding:100px;
+}
+
+
+.navbar-toggler-icon{
+        background-color:rgb(15, 15, 15) ; /*para ver a barrinha*/
+    }
+.navegar {
+    position: relative; /*garante que o z-index funcione */
+    z-index: 1; /* Define a ordem de empilhamento do div .navegar */
+    }
+.head h1{
+    font-weight: 600;
+    color:#f8f5f5;
+    font-size: 90px;
+    text-align: center;
+}
+.head h3{
+    color:#f8f5f5;
+    font-size: 24px;
+    text-align: center;
+}
+.head h1, .head h3,.bg-body-tertiary, .loginBtn   {
+    position: relative;
+    z-index: 2; /* Coloca os títulos na frente do vídeo */
+    filter: none; 
+}
+
+.background-video {
+    position: absolute;
+    margin: 10px auto 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Redimensiona o vídeo para cobrir todo o espaço disponível */
+    z-index: 1; /* Coloca o vídeo atrás dos títulos */
+    opacity: 0.7; /* Ajusta a opacidade do vídeo para mostrar os títulos */
+}
+.container-fluid{
+    color:#f8f5f5;
+}
+/* === HEADING STYLE #5 === */
+
+.five h1 {
+    margin: 200px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700; color:white;
+    text-transform: uppercase;
+    word-spacing: 1px; letter-spacing:2px;
+  }
+  .five h1 span {
+    margin: 0px;
+    text-transform: none;
+    font-size:.75em;
+    font-weight: normal;
+    font-style: italic; font-family: "Playfair Display","Bookman",serif;
+    color:white; letter-spacing:-0.005em; word-spacing:1px;
+    letter-spacing:none;
+  }
+  .five h1:before {
+    position: absolute;
+    left: 0;
+    bottom: 38px;
+    width: 60px;
+    height: 4px;
+    content: "";
+    left: 50%;
+    margin-left: -30px;
+    background-color: #dfdfdf;
+  }
