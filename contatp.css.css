@@ -1,29 +1,99 @@
-/* Estilizando o corpo da página */
-.body {
-  font-family: Arial, sans-serif; /* Define a família da fonte para o corpo */
-  margin: 0; /* Remove margens padrão */
-  padding: 0; /* Remove preenchimento padrão */
+body {
+  background-color: #220000;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Estilizando a barra de navegação */
-.navbar {
-  background-color: #fff; /* Cor de fundo da barra de navegação */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra da barra de navegação */
+.navehome {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: black; /* Alterei a cor de fundo para branco */
+  padding: 10px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilizando o link ativo */
-.nav-link.active {
-  font-weight: bold; /* Definindo o peso da fonte para o link ativo */
-  color: #220000; /* Cor do link ativo */
+.navehome .logo {
+  display: inline-block;
+  margin-left: 20px;
 }
 
-/* Estilizando os links do menu */
-.nav-link {
-  color: #555; /* Cor dos links do menu */
+.navehome .links {
+  display: inline-block;
+  margin-left: 20px;
 }
 
-/* Estilizando a logo */
-.navbar-brand img {
-  width: 120px; /* Tamanho da imagem da logo */
-  height: auto; /* Altura automática para manter a proporção */
+.navehome .links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navehome .links ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.panel-container {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(54, 53, 53, 0.2);
+  background-color: #272626;
+  margin-top: 50px; /* Espaçamento do topo */
+}
+
+.panel-container img {
+  width: 40%;
+  height: auto;
+  margin: 50px;
+}
+
+
+.form-container {
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="email"] {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  font-size: 16px;
+  outline: none;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  outline: none;
+}
+
+button[type="submit"]:hover {
+  font-size: 30px;
+}
+
+small {
+  text-align: center;
+}
+.form-container{
+  color: white;
 }
