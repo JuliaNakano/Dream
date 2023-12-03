@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="navegar.css">
 
   <link rel="stylesheet" href="style.css">
+
   <!-- css do rodape -->
   <link rel="stylesheet" href="rodape.css">
   <!-- link boostrap se quiserem baixar o repositorio depois -->
@@ -18,16 +19,16 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+   
+
 
 </head>
 
 <body class="home">
 
 <!-- ======================================================== -->
-<!-- Nave -->
-    <nav class="navehome">
+<!-- Nave navbar-expand-lg fixed-top-->
+    <nav class="navehome " >
 
     <div class="logo">
       <a href="home.html"><img src="imgs/logo.png"></a>
@@ -57,8 +58,6 @@
 
   </div>
 
-</div>
-
 
 <div class=" text_1">
   <div class="text"> 
@@ -71,6 +70,53 @@
 <img src="imgs/mais_procurados01.jpg" alt="">
 </div>
 
+</div>
+
+<div class="estilo_h2"><h1>Destaqes</h1></div>
+
+<div class="body_carrossel">
+  <main class=" main_carrossel">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="imgs/destaques01].jpg" alt="Foto 01">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="imgs/destaques02.jpg" alt="Foto 02">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="imgs/destaques03.jpg" alt="Foto 03">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="imgs/destaques04.jpg" alt="Foto 04">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="imgs/destaques05.jpg" alt="Foto 05">
+            </div>
+          </div>
+        </div>
+      
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+</div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+
+
   <!--Lançamento-->
   <div class="estilo_h2"><h1>Lançamentos</h1></div>
   
@@ -80,13 +126,14 @@
         <div class="container text-center">
           <div class="row">
             <div class="col">
+              <div class="swiper">
               <!-- primeiro card -->
               <div class="card" style="width: 18rem;">
                 <img src="imgs/lançamento02.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">Guardiões da Galaxia 3</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">Peter Quill deve reunir sua equipe para defender o universo e proteger um dos seus. 
+                    Se a missão não for totalmente bem-sucedida, isso pode levar ao fim dos Guardiões.</p>
                 </div>
               </div>
             </div>
@@ -95,8 +142,8 @@
                 <img src="imgs/lançamento03.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">Gato de Botas 2: O Último Pedido</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">O Gato de Botas descobre que sua paixão pela aventura cobrou seu preço: 
+                    ele já gastou oito de suas nove vidas. Ele então parte em uma jornada épica para encontrar o mítico Último Desejo e restaurar suas nove vidas.</p>
                 </div>
               </div>
             </div>
@@ -106,8 +153,7 @@
                 <img src="imgs/lançamento04.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">Dungeons and Dragons: Honra entre Rebeldes </h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">Um ladrão e um bando de aventureiros embarcam em uma jornada épica para recuperar uma relíquia.</p>
                 </div>
               </div>
             </div>
@@ -123,9 +169,8 @@
               <div class="card" style="width: 18rem;">
                 <img src="imgs/lançamento05.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h1 class="carrossel_h1"> John Wick Capítulo 4</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <h1 class="carrossel_h1"> John Wick Capítulo 5</h1>
+                  <p class="card-text">O filme acompanha John Wick (Keanu Reeves), um assassino aposentado que volta a ativa por vingança e começa a ser perseguido pelos maiores assassinos do mundo. Confira a classificação indicativa no Portal Online da Cultura Digital./p>
                 </div>
               </div>
             </div>
@@ -135,8 +180,7 @@
                 <img src="imgs/lançamento06.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1"> A Morte do Demônio: A Ascensão</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text"> Uma mulher se encontra em uma luta por sua vida quando um livro antigo dá à luz demônios sedentos por sangue. Eles se tornam cada vez mais agressivos em um prédio em Los Angeles.</p>
                 </div>
               </div>
             </div>
@@ -146,18 +190,14 @@
                 <img src="imgs/lançamento07.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">Homem Aranha através do Aranhaverso </h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">Depois de se reunir com Gwen Stacy, Homem-Aranha é jogado no multiverso, onde ele encontra uma equipe encarregada de proteger sua própria existência.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
-
-
-
-
 
       <div class="carousel-item">
         <div class="container text-center">
@@ -169,9 +209,7 @@
                 <img src="imgs/lançamento08.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">Super Marios Bros. - O Filme </h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                </div>
+                  <p class="card-text">Mario e seu irmão Luigi são encanadores do Brooklyn, em Nova York. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach. O local é ameaçado por Bowser, rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.
               </div>
             </div>
             <div class="col">
@@ -179,8 +217,7 @@
                 <img src="imgs/lançamento09.png.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">Barbie </h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.</p>
                 </div>
               </div>
             </div>
@@ -189,8 +226,7 @@
                 <img src="imgs/lançamento10.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">Oppenheimer </h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.</p>
                 </div>
               </div>
             </div>
@@ -207,18 +243,16 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> 4d0c83a448384e045b9070f2b4814dfdf2aa069e
+  </div>
+
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
-
+  
 
   <!-- mais procurados-->
   <div class=" estilo_h2"><h2>Mais procurados</h2></div>
- 
+
 <div class=" carrossel">  
 <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
@@ -231,8 +265,9 @@
                 <img src="imgs/mais_procurados01.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">Titanic</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">
+                    "Titanic" é um épico romântico que narra o trágico amor 
+                    entre Jack e Rose durante a viagem inaugural do navio, culminando no impactante naufrágio.</p>
                 </div>
               </div>
             </div>
@@ -241,8 +276,8 @@
                 <img src="imgs/mais_procurados02.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">O Iluminado</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">"O Iluminado" é um filme de terror psicológico dirigido por Stanley Kubrick, retratando a descida à loucura de Jack Torrance enquanto ele e sua família enfrentam 
+                    eventos sobrenaturais em um hotel isolado.</p>
                 </div>
               </div>
             </div>
@@ -252,8 +287,9 @@
                 <img src="imgs/mais_procurados03.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">Interestelar</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">
+                    "Interestelar" é um épico de ficção científica dirigido por Christopher Nolan, onde astronautas
+                     exploram buracos de minhoca para encontrar um novo lar para a humanidade diante da crise global.</p>
                 </div>
               </div>
             </div>
@@ -270,9 +306,10 @@
               <div class="card" style="width: 18rem;">
                 <img src="imgs/mais_procurados04.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h1 class="carrossel_h1">Batman</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <h1 class="carrossel_h1"> The Batman</h1>
+                  <p class="card-text">
+                    "The Batman" segue o vigilante Bruce Wayne, interpretado por Robert Pattinson, enquanto ele enfrenta 
+                    uma série de crimes em Gotham City, desvendando segredos sombrios e confrontando o vilão Charada.</p>
                 </div>
               </div>
             </div>
@@ -293,8 +330,9 @@
                 <img src="imgs/mais_procurados06.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">Nosso Lar</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">
+                    "O Exorcista" é um filme de terror que acompanha a angustiante batalha entre dois padres e o malígno
+                     espírito que possui uma jovem garota.</p>
                 </div>
               </div>
             </div>
@@ -311,8 +349,8 @@
                 <img src="imgs/mais_procurados07.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">Indiana Jones</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">"Indiana Jones" é uma série de aventuras cinematográficas que segue o arqueólogo intrépido, 
+                    interpretado por Harrison Ford, em busca de artefatos históricos enfrentando vilões e desafios perigosos.</p>
                 </div>
               </div>
             </div>
@@ -321,8 +359,9 @@
                 <img src="imgs/mais_procurados08.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">Joker</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">
+                    "Joker" é um filme que explora a transformação do comediante falido Arthur Fleck no icônico vilão, mergulhando 
+                    nas profundezas da insanidade e injustiça social em Gotham City.</p>
                 </div>
               </div>
             </div>
@@ -331,9 +370,11 @@
                 <img src="imgs/mais_procurados09.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h1 class="carrossel_h1">O Poderoso Chefão</h1>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">
+                    "O Poderoso Chefão" é um épico cinematográfico que narra a ascensão e queda da família Corleone no mundo do crime, 
+                    liderada pelo patriarca Vito Corleone, interpretado por Marlon Brando.</p>
                 </div>
+    
               </div>
             </div>
           </div>
@@ -341,36 +382,23 @@
       </div>
     </div>
    
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicadores" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicadores" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-
-  
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
 
   
     
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+    
 
 
 

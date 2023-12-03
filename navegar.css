@@ -1,188 +1,180 @@
-/* Define estilos para a classe "container" */
-.container {
-    display: flex; /* Exibe os elementos como um flex container */
-    flex-wrap: wrap; /* Permite que os elementos filhos quebrem linha conforme necessário */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 20px; /* Espaçamento entre os elementos filhos */
-}
+.body {
+ background-color : #220000 ;
+ }
+ /* Define styles for a class "container" */
+ .container {
+ display : flex ; /* Display the elements as a flex container */
+ flex-wrap : wrap ; /* Permit que os elementos filhos quebrem linha conforme necessário */
+ justify-content : center ; /* Centralize the items horizontally */
+ gap : 20px ; /* Spaçamento entre os elementos filhos */
+ }
 
-/* Media query para telas com no máximo 600px de largura */
-@media (max-width: 600px) {
-    /* Estilos aplicados aos elementos com a classe "card" dentro da media query */
-    .card {
-        /* Cores para elementos com a classe "card" */
-        background-color: rgb(184, 182, 179); /* Cor de fundo dos elementos */
-        border: 1px solid black; /* Cor da borda dos elementos */
-        border-radius: 8px; /* Arredonda as bordas dos elementos */
-        padding: 20px; /* Espaçamento interno dos elementos */
-        margin: 10px; /* Margem ao redor dos elementos */
-        position: relative; /* Posição relativa aos elementos */
-        left: 0px; /* Posição inicial à esquerda */
-        transition: transform 0.3s ease-in-out; /* Animação de transição */
-        text-align: center; /* Alinhamento do texto */
-        overflow: hidden; /* Esconde o conteúdo que excede os limites */
-        box-sizing: border-box; /* Considera as bordas e margens no tamanho total do elemento */
-    }
-}
+ /* Media query for telas com no máximo 600px de largura */
+ @media ( max-width : 600px ) {
+ /* Estilos aplicados aos elementos com a classe "card" dentro da media query */
+ .card {
+ /* Cores for elements with a class "card" */
+ background-color : rgb ( 184 , 182 , 179 ); /* Background of elements */
+ border : 1px solid black ; /* Cor da borda dos elements */
+ border-radius : 8px ; /* Arredonda as bordas dos elementos */
+ padding : 20px ; /* Internal spacing of elements */
+ margin : 10px ; /* Margem aro redor dos elements */
+ position : relative ; /* Position relative to elements */
+ left : 0px ; /* Left initial position */
+ transition : transform 0.3s ease-in-out ; /* Transition animation */
+ text-align : center ; /* Alignment of text */
+ overflow : hidden ; /* Hide content that exceeds limits */
+ box-sizing : border-box ; /* Consider as borders and margins for the total size of the element */
+ }
+ }
 
-/* Estilos para elementos com a classe "navegar" */
-.navegar {
-    /* Estilos para o texto dentro dos elementos com a classe "navegar" */
-    font-family: 'Lato', sans-serif; /* Define a fonte do texto */
-    color: #141414; /* Cor do texto */
-    text-align: center; /* Alinhamento do texto */
-    margin-top: 100px; /* Espaçamento superior para centralizar */
-}
+ /* Styles for elements with a class "navegar" */
+ .navegar {
+ /* Styles for text inside two elements with a class "navegar" */
+ font-family : 'Lato' , sans-serif ; /* Define a text font */
+ color : white ; /* Cor do texto */
+ text-align : center ; /* Alignment of text */
+ margin-top : 100px ; /* Spacing superior para centralizar */
+ }
 
-/* Estilos para a barra de navegação */
-.navbar-nav {
-    display: flex; /* Exibe os itens da barra de navegação em linha */
-    align-items: center; /* Alinha os itens verticalmente */
-    color: white; /* Cor do texto */
-}
+ /* Styles for a navigation bar */
+ .navbar-nav {
+ display : flex ; /* Display the navigation bar items on the line */
+ align-items : center ; /* Align the items vertically */
+ color : white ; /* Cor do texto */
+ }
 
-/* Estilos para os itens da barra de navegação */
-.navbar-nav .nav-item {
-    color: white; /* Cor do texto */
-    margin-right: 20px; /* Espaçamento entre os itens */
-}
+ /* Styles for navigation bar items */
+ .navbar-nav .nav-item {
+ color : white ; /* Cor do texto */
+ margin-right : 20px ; /* Spacing between items */
+ }
 
-/* Estilos para elementos com a classe "card" */
-.card {
-    /* Define as dimensões e propriedades dos elementos com a classe "card" */
-    width: 250px; /* Largura dos elementos */
-    height: 200px; /* Altura dos elementos */
-    overflow: hidden; /* Esconde o conteúdo que excede os limites */
-    perspective: 1000px; /* Define a perspectiva para efeitos 3D */
-}
+ /* Styles for elements with a class "card" */
+ .card {
+ /* Define as dimensões e properties dos elementos com a classe "card" */
+ width : 250px ; /* Length of elements */
+ height : 200px ; /* Height of elements */
+ overflow : hidden ; /* Hide content that exceeds limits */
+ perspective : 1000px ; /* Define a perspective for 3D effects */
+ }
 
-/* Estilos para o conteúdo dentro dos elementos com a classe "card" */
-.card-content {
-    /* Define as propriedades do conteúdo dentro dos elementos com a classe "card" */
-    width: 100%; /* Largura */
-    height: 100%; /* Altura */
-    position: absolute; /* Posição absoluta */
-    transition: transform 0.6s; /* Animação de transição */
-}
+ /* Styles for content inside two elements with a class "card" */
+ .card-content {
+ /* Define as properties of content inside elements with a class "card" */
+ width : 100% ; /* Length */
+ height : 100% ; /* Height */
+ position : absolute ; /* Absolute position */
+ transition : transform 0.6s ; /* Transition animation */
+ }
 
-/* Estilos para imagens dentro dos elementos com a classe "card" */
-.card img {
-    /* Define as propriedades das imagens dentro dos elementos com a classe "card" */
-    width: 100%; /* Largura */
-    height: 100%; /* Altura */
-    object-fit: cover; /* Ajuste da imagem para cobrir a área */
-}
+ /* Estilos para imagens dentro dos elementos com a classe "card" */
+ .card img {
+ /* Define as properties das imagens dentro dos elementos com a classe "card" */
+ width : 100% ; /* Length */
+ height : 100% ; /* Height */
+ object-fit : cover ; /* Adjust the image to cover the area */
+ }
 
-/* Estilos para a sobreposição nos elementos com a classe "card" ao passar o mouse */
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(163, 151, 151);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    transform: translateY(100%);
-    transition: transform 0.6s;
-}
+ /* Styles for superposition of elements with a class "card" and passar o mouse */
+ .overlay {
+ position : absolute ;
+ bottom : 0 ;
+ left : 0 ;
+ width : 100% ;
+ background-color : rgb ( 163 , 151 , 151 );
+ color : white ;
+ text-align : center ;
+ padding : 20px ;
+ transform : translateY ( 100% );
+ transition : transform 0.6s ;
+ }
 
-.card:hover .overlay {
-    transform: translateY(0);
-}
-.flip-card {
-        width: 300px;
-        height: 200px;
-        perspective: 1000px;
-    }
+ .card:hover .overlay {
+ transform : translateY ( 0 );
+ }
+ .flip-card {
+ width : 300px ;
+ height : 200px ;
+ perspective : 1000px ;
+ }
 
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-    }
+ .flip-card-inner {
+ position : relative ;
+ width : 100% ;
+ height : 100% ;
+ text-align : center ;
+ transition : transform 0.6s ;
+ transform-style : preserve-3d ;
+ }
 
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
+ .flip-card:hover .flip-card-inner {
+ transform : rotateY ( 180deg );
+ }
 
-    .flip-card-front,
-    .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-    }
+ .flip-card-front ,
+ .flip-card-back {
+ position : absolute ;
+ width : 100% ;
+ height : 100% ;
+ backface-visibility : hidden ;
+ }
 
-    .flip-card-front {
-        background-color: #bbb;
-        color: #0a0a0a;
-    }
+ .flip-card-front {
+ background-color : #bbb ;
+ color : white ;
+ }
 
-    .flip-card-back {
-        background-color: #201e1e;
-        color: #bbb;
-        height:auto;
-        transform: rotateY(180deg);
-    }
+ .flip-card-back {
+ background-color : #201e1e ;
+ color : #bbb ;
+ height : auto ;
+ transform : rotateY ( 180deg );
+ }
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+ img {
+ width : 100% ;
+ height : 100% ;
+ object-fit : cover ;
+ }
 
-    @media (max-width: 768px) { /*ajuste para outros dispositivos*/
-        .flip-card {
-            width: calc(50% - 20px);
-        }
-    }
+ @media ( max-width : 768px ) { /*ajuste para outros dispositivos*/
+ .flip-card {
+ width : calc ( 50% - 20px );
+ }
+ }
 
-    @media (max-width: 480px) {
-        .flip-card {
-            width: calc(100% - 20px);
-        }
-    }
-  .container-fluid img{ /*Imagem logo no nav*/
-    height: 100px;
-    width: 100px;
-  }
-  .navbar navbar-expand-lg bg-dark fixed-top{
-    background-color: beige;
-  }
+ @media ( max-width : 480px ) {
+ .flip-card {
+ width : calc ( 100% - 20px );
+ }
+ }
+ .container-fluid img { /*Imagem logo for nav*/
+ height : 100px ;
+ width : 100px ;
+ }
 
-    #nav-navbarSupportedContent{
-    color:white;
-  }
-  /* Altera o fundo da barra de navegação para preto */
-        .navbar {
-        background-color: black;
-        color: #fff;
-        }
 
-        /* Altera a cor do texto para branco */
-        .navbar .navbar-nav .nav-link {
-        color: #fff;
-        font-size: larger;
-        }
-        .navbar-toggler-icon{
-            background-color:#504c4c; /*para ver a barrinha*/
-        }
-/* ... (seu CSS existente) ... */
+ /* 
+  .navbar navbar-expand-lg bg-dark fixed-top {
+ background-color : beige ;
+ }
+ #nav-navbarSupportedContent {
+ color : white ;
+ .navbar {
+ background-color : black ;
+ color : #fff ;
+ }
+ } */
+ 
+ nave
 
-/* Ajustes para a seção "Filmes" */
-.col-md-4 {
-    background-color: black;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-  }
+ /* Settings for the "Films" section */
+ .col-md-4 {
+ background-color : black ;
+ border-radius : 8px ;
+ padding : 20px ;
+ margin : 10px ;
+ text-align : center ;
+ } 
 
-  
-  
-  
-  
