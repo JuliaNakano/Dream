@@ -22,12 +22,15 @@ body{
 .card{
     padding: 5px;
     margin: 1px auto 0;
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 400px;
     bottom: 15px; /* Ajuste a posição vertical conforme necessário */
     left: 50%; /* Coloca o cartão no centro horizontal */
     transform: translateX(-50%); /* Corrige a posição para o centro horizontal */
     z-index: 1;
+    margin-bottom: 23px;
+    margin-left: 13px;
+   
 }
 
 .card video {
@@ -53,7 +56,8 @@ body{
 .fundo img {
   height: 590px; /* Defina a altura desejada para as imagens */
   width: auto; /* Mantenha a largura proporcional à altura */
-  object-fit: cover; /* Garante que a imagem cubra todo o espaço disponível */
+  object-fit: cover; 
+/* Garante que a imagem cubra todo o espaço disponível */
 }
 
 

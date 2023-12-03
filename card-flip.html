@@ -34,10 +34,14 @@
                 <a class="navbar-brand" href="contato.html" >Contato</a>
               </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
+                <form class="d-tex" role="search"> <!--campo de pesquisar + scritp la embaixo-->
+            
+                    <input type="text" id="searchInput" name="searchInput" placeholder="Digite aqui para pesquisar" aria-label="Search" size="30">
+                    <button type="button" class="btn btn-outline-light" onclick="search()">Buscar</button>
+                    <ul id="results"></ul>
+               
+               
+            </form>
               
             </div>
             
@@ -82,7 +86,7 @@
                       <div class="card__header">
                           <img src="imgs/castelo.png" class="fundo"/> <!--parte posterior img-->
                           <div class="card__body">
-                              <a href="criticasFilmes/CasteloAnimado.html" class="btn btn-outline-light btn-lg btn-block">Crítica do filme</a>
+                             <a href="criticasFilmes/CasteloAnimado.html" class="btn btn-outline-light btn-lg btn-block">Crítica do filme</a>
   
                               <h3> Dir. Hayao Miyazaki 2004</h3>
                               <p><b>Drescrição:</b> <br> Uma bruxa lança uma terrível maldição sobre a jovem Sophie transformando-a em uma velha. 
@@ -104,6 +108,7 @@
                      <!---- <button type="button" class="btn btn-outline-dark mt-2">Info</button>-->
                   </div>
               </div>
+
           
               <div class="card__face card__face--back">
                   <div class="card__content">
@@ -146,7 +151,10 @@
                   
               </div>
           </div>
-      </div></div>
+
+      </div>
+    </div>
+
         <div class="col"><div class="card"> <!--coluna aq-->
           <div class="card__inner">
               <div class="card__face card__face--front"> <!--cartão frente-->
