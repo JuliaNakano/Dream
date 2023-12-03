@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criticas | Dream</title>
+    <link rel="stylesheet" href="../critica.css">
+    <!-- css do rodape -->
+    <link rel="stylesheet" href="../rodape.css">
+    <link rel="stylesheet" href="../navegar.css">
+    <link rel="icon" href="../imgs/logo.png"> 
+    <link rel="icon" href="../imgs/style.css"> 
+
+
+    <script src="script.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+
+</head>
+
+<body class="home">
+    
+<!-- ======================================================== -->
+<!-- Nave -->
+    <nav class="navehome">
+
+    <div class="logo"> <img src="../img/logo.png"> </div>
+
+    <div class= "links">
+
+        <ul class="naveitens">
+            <li> <a href="../home.html">Home</a></li>
+            <li> <a href="../navegar.html">Navegar</a></li>
+            <li> <a href="../contato.html">Contato</a></li>
+
+        </ul>
+    </div>
+    <div class="butonave">
+
+        <button> <a href="../login.html">Login</a></button>
+    </div>
+    <form class="d-flex" role="search"> <!--campo de pesquisar + scritp la embaixo-->
+      <input type="text" id="searchInput" name="searchInput" placeholder="Digite aqui para pesquisar" aria-label="Search" size="30">
+      <button type="button" class="btn btn-outline-light" onclick="search()">Buscar</button>
+      <ul id="results"></ul>
+  </form>
+    </nav>
+<!-- ======================================================== -->
+<!-- Parte principal -->
+
+  <div class="critica-container">
+
+    <div class="critica-filme">
+      <!-- fica na parte de cima do container -->
+      <!-- mostra as partes principais -->
+      <img src="../animkiki.png" class="critica-fundo">
+
+      <img src="../animKikiPoster.png" class="critica-poster">
+      <h1>O Serviço de Entrega da Kiki</h1>
+
+      <div class="critica-gradient">
+        <!-- coloca um degrade -->
+      </div>
+    </div>
+
+    <div class="critica-sobre">
+      <!-- essa parte vai ter sinopse, classificacao, data de lancamento,etc -->
+      <div class="critica-sinopse">
+        <h1>Sinopse:</h1>
+        <p>
+            Por ordem de sua mãe, Kiki parte para um aprendizado de um ano, acompanhada por seu gato preto. A um comando de sua vassoura mágica, ela vai parar na charmosa cidadezinha de Moreoastal. Infelizmente, os hotéis locais não aceitam bruxas e a polícia a flagra fazendo algumas travessuras.
+        </p>
+      </div>
+      <div class="critica-info">
+        <h1>Sobre o filme:</h1>
+        <p>
+          Lançamento: 29/07/1989<br>
+          Genero: Animação<br>
+          Duração: 142min<br>
+          Direção: Hayao Miyazaki<br>
+        </p>
+      </div>
+    </div>
+
+
+    <!-- nessa parte vai ficar os comentarios e reviews -->
+    <hr width="70%" style="margin: 2% auto;">
+    <h1> Comentarios:</h1>
+
+    <div class="critica-novoComentario">
+      <h4>Deixe seu comentário!</h4>
+      <textarea id="comentario" placeholder="Digite seu comentario aqui!"></textarea><br>
+      <button onclick="novoComentario();">Enviar</button>
+    </div>
+
+    <div class="critica-reviews" id="critica-reviews">
+      <div class="critica-comentario">
+        <h4>Carolina Lima</h4>
+        <p>"Serviço de Entrega da Kiki" continua relevante ao longo do tempo, transmitindo mensagens sobre determinação, autoaceitação e perseverança, tornando-o uma obra atemporal e encantadora para todas as idades.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Ana Luiza</h4>
+        <p>A beleza deste filme reside na simplicidade de sua história. Ao seguir a vida cotidiana de Kiki, ele ressalta a importância das pequenas coisas e dos momentos que moldam nossas vidas.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Carlos Eduardo</h4>
+        <p>Este filme mágico não só explora o mundo da bruxaria, mas também enfatiza o valor da amizade. Kiki e seu fiel gato preto, Jiji, mostram como os laços de amizade podem ser essenciais durante desafios.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Isabela Santino</h4>
+        <p>Com uma narrativa leve, o filme celebra o empoderamento feminino ao apresentar uma protagonista independente e corajosa, inspirando jovens espectadores a serem resilientes.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>José Luis</h4>
+        <p>Este filme mágico não só explora o mundo da bruxaria, mas também enfatiza o valor da amizade. Kiki e seu fiel gato preto, Jiji, mostram como os laços de amizade podem ser essenciais durante desafios.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Raphael Silva</h4>
+        <p>Com uma animação cativante, o filme narra a jornada de Kiki, destacando sua aventura na busca por identidade e propósito enquanto se esforça para encontrar seu caminho como bruxa.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- ======================================================== -->
+  <!-- Rodape deve ficar no final -->
+    <footer class="rodape" id="rodape">
+      <!-- esquerda do rodape -->
+      <div class="rodape-esquerda">
+        <a href="https://www.formiga.ifmg.edu.br/"><img src="../if-logo.png" class="logo-ifmg"></a>
+      </div>
+
+      <!-- centro do rodape -->
+      <div class="rodape-centro">
+        <!-- imagens pros contatos -->
+        <a href=""><img src="../twitter.png" class="logo-redondo"></a>
+        <a href=""><img src="../instagram.png" class="logo-redondo"></a>
+        <a href=""><img src="../linkedin.png" class="logo-redondo"></a>
+        <p>Entre em contato conosco!</p>
+
+        <!-- clicar na logo faz voltar pro comeco da pagina -->
+        <a href="#"><img src="../logo.png"></a>
+
+        <!-- membros do time -->
+        <p>
+          Júlia Nakano <br>
+          Maria Eduarda <br>
+          Victor Luis
+        </p>
+      </div>
+
+      <!-- direita do rodape -->
+      <div class="rodape-direita">
+        <p>Trabalho desenvolvido como exigência do componente curricular Desenvolvimento web</p>
+      </div>
+    </footer>
+<!-- ======================================================== -->
+</body>
+</html>

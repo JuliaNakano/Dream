@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criticas | Dream</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- css do rodape -->
+    <link rel="stylesheet" href="../rodape.css">
+
+    <script src="../script.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+
+</head>
+
+<body class="home">
+    
+<!-- ======================================================== -->
+<!-- Nave -->
+    <nav class="navehome">
+
+    <div class="logo">
+      <a href="../home.html"><img src="../imgs/logo.png"></a>
+    </div>
+
+    <div class= "links">
+
+        <ul class="naveitens">
+            <li> <a href="../home.html">Home</a></li>
+            <li> <a href="../card-flip.html">Navegar</a></li>
+            <li> <a href="../contato.html">Contato</a></li>
+
+        </ul>
+    </div>
+    <div class="butonave">
+
+        <button> <a href="../login.html">Login</a></button>
+    </div>
+    </nav>
+<!-- ======================================================== -->
+<!-- Parte principal -->
+
+  <div class="critica-container">
+
+    <div class="critica-filme">
+      <!-- fica na parte de cima do container -->
+      <!-- mostra as partes principais -->
+      <img src="../imgs/handFundo.png" class="critica-fundo">
+
+      <img src="../imgs/handPoster.png" class="critica-poster">
+      <h1>The Handmaiden</h1>
+
+      <div class="critica-gradient">
+        <!-- coloca um degrade -->
+      </div>
+    </div>
+
+    <div class="critica-sobre">
+      <!-- essa parte vai ter sinopse, classificacao, data de lancamento,etc -->
+      <div class="critica-sinopse">
+        <h1>Sinópse:</h1>
+        <p>Em "The Handmaiden", dirigido por Park Chan-wook, o enredo se desenrola durante a ocupação japonesa na década de 1930, seguindo a história de Sook-hee, uma astuta golpista que se torna a empregada da herdeira japonesa Lady Hideko. O que começa como uma intriga doméstica rapidamente se transforma em um jogo de traições, revelando segredos obscuros e paixões proibidas. Com reviravoltas arrebatadoras e uma estética visual envolvente, o filme explora os limites do amor e da manipulação em um cenário de luxúria e traição.</p>
+      </div>
+      <div class="critica-info">
+        <h1>Sobre o filme:</h1>
+        <p>
+          Lançamento: 01/06/2016<br>
+          Genero: Drama, Suspense<br>
+          Duração: 145min<br>
+          Direção: Park Chan-wook<br>
+        </p>
+      </div>
+    </div>
+
+
+    <!-- nessa parte vai ficar os comentarios e reviews -->
+    <hr width="70%" style="margin: 2% auto;">
+    <h1> Comentarios:</h1>
+
+    <div class="critica-novoComentario">
+      <h4>Deixe seu comentário!</h4>
+      <textarea id="comentario" placeholder="Digite seu comentario aqui!"></textarea><br>
+      <button onclick="novoComentario();">Enviar</button>
+    </div>
+
+    <div class="critica-reviews" id="critica-reviews">
+
+      <div class="critica-comentario">
+        <h4>Alex</h4>
+        <p>Park Chan-wook tece uma narrativa magistral em 'The Handmaiden', envolvendo o público em um labirinto de traições e desejos proibidos. Cada cena é uma obra-prima visual, elevando o cinema sul-coreano a novas alturas.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Nicole</h4>
+        <p>O filme transcende as barreiras do suspense ao explorar temas como poder, submissão e sexualidade. Uma reflexão provocativa sobre as nuances das relações humanas, habilmente apresentada por Chan-wook.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Leonardo</h4>
+        <p>Park Chan-wook demonstra sua maestria visual em 'The Handmaiden', cada quadro é uma obra de arte meticulosamente composta. A estética deslumbrante intensifica a complexidade emocional do enredo.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Manuela</h4>
+        <p>O enredo intricado e as reviravoltas chocantes de 'The Handmaiden' me mantiveram à beira do assento. Um thriller sensual que desafia convenções, redefinindo o gênero com maestria.</p>
+      </div>
+
+
+    </div>
+  </div>
+
+
+<!-- ======================================================== -->
+  <!-- Rodape deve ficar no final -->
+    <footer class="rodape" id="rodape">
+      <!-- esquerda do rodape -->
+      <div class="rodape-esquerda">
+        <a href="https://www.formiga.ifmg.edu.br/"><img src="../imgs/if-logo.png" class="logo-ifmg"></a>
+      </div>
+
+      <!-- centro do rodape -->
+      <div class="rodape-centro">
+        <!-- imagens pros contatos -->
+        <a href=""><img src="../imgs/twitter.png" class="logo-redondo"></a>
+        <a href=""><img src="../imgs/instagram.png" class="logo-redondo"></a>
+        <a href=""><img src="../imgs/linkedin.png" class="logo-redondo"></a>
+        <p>Entre em contato conosco!</p>
+
+        <!-- clicar na logo faz voltar pro comeco da pagina -->
+        <a href="#"><img src="../imgs/logo.png"></a>
+
+        <!-- membros do time -->
+        <p>
+          Júlia Nakano <br>
+          Maria Eduarda <br>
+          Victor Luis
+        </p>
+      </div>
+
+      <!-- direita do rodape -->
+      <div class="rodape-direita">
+        <p>Trabalho desenvolvido como exigência do componente curricular Desenvolvimento web</p>
+      </div>
+    </footer>
+<!-- ======================================================== -->
+</body>
+</html>

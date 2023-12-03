@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criticas | Dream</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- css do rodape -->
+    <link rel="stylesheet" href="../rodape.css">
+
+    <script src="../script.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+
+</head>
+
+<body class="home">
+    
+<!-- ======================================================== -->
+<!-- Nave -->
+    <nav class="navehome">
+
+    <div class="logo">
+      <a href="../home.html"><img src="../imgs/logo.png"></a>
+    </div>
+
+    <div class= "links">
+
+        <ul class="naveitens">
+            <li> <a href="../home.html">Home</a></li>
+            <li> <a href="../card-flip.html">Navegar</a></li>
+            <li> <a href="../contato.html">Contato</a></li>
+
+        </ul>
+    </div>
+    <div class="butonave">
+
+        <button> <a href="../login.html">Login</a></button>
+    </div>
+    </nav>
+<!-- ======================================================== -->
+<!-- Parte principal -->
+
+  <div class="critica-container">
+
+    <div class="critica-filme">
+      <!-- fica na parte de cima do container -->
+      <!-- mostra as partes principais -->
+      <img src="../imgs/driveMyCarFundo.png" class="critica-fundo">
+
+      <img src="../imgs/drive.png" class="critica-poster">
+      <h1>Drive My Car</h1>
+
+      <div class="critica-gradient">
+        <!-- coloca um degrade -->
+      </div>
+    </div>
+
+    <div class="critica-sobre">
+      <!-- essa parte vai ter sinopse, classificacao, data de lancamento,etc -->
+      <div class="critica-sinopse">
+        <h1>Sinópse:</h1>
+        <p>
+          "Drive My Car" é uma comovente exploração da perda, amor e redenção. O renomado diretor de teatro Yusuke Kafuku contrata uma motorista, Misaki Watari, para conduzi-lo aos ensaios de uma peça de Tchekhov. No carro, segredos são revelados, criando um espaço íntimo onde a cura emocional se desenrola. Com paisagens deslumbrantes e performances envolventes, o filme transcende as barreiras do tempo e da linguagem, deixando os espectadores reflexivos sobre a efemeridade da vida e o poder da conexão humana.
+        </p>
+      </div>
+      <div class="critica-info">
+        <h1>Sobre o filme:</h1>
+        <p>
+          Lançamento: 17/03/2022 (Brasil)<br>
+          Genero: Drama<br>
+          Duração: 179min<br>
+          Direção: Ryusuke Hamaguchi<br>
+        </p>
+      </div>
+    </div>
+
+
+    <!-- nessa parte vai ficar os comentarios e reviews -->
+    <hr width="70%" style="margin: 2% auto;">
+    <h1> Comentarios:</h1>
+
+    <div class="critica-novoComentario">
+      <h4>Deixe seu comentário!</h4>
+      <textarea id="comentario" placeholder="Digite seu comentario aqui!"></textarea><br>
+      <button onclick="novoComentario();">Enviar</button>
+    </div>
+
+    <div class="critica-reviews" id="critica-reviews">  
+      <div class="critica-comentario">
+        <h4>João</h4>
+        <p>Drive My Car desafia expectativas, explorando as complexidades humanas de maneira profunda. A escolha do carro como espaço de revelações cria uma experiência cinematográfica única.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Ana</h4>
+        <p>Este filme é um presente para os amantes do cinema contemplativo. A jornada de Yusuke e Misaki é um espelho para a introspecção do espectador, desdobrando-se como uma peça teatral meticulosamente ensaiada.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Pedro</h4>
+        <p>Drive My Car transcende o cinema, tornando-se uma experiência cultural completa. A interseção entre a tragédia pessoal e a obra de Tchekhov adiciona camadas de significado, explorando a interconexão entre arte, vida e superação.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Isabela</h4>
+        <p>A estética visual de Drive My Car é deslumbrante. Cada cena é uma obra de arte em movimento, capturando a beleza nas paisagens e nos detalhes do cotidiano. Um filme que se desdobra visualmente e emocionalmente.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Carlos</h4>
+        <p>Drive My Car é uma obra-prima de performances. O elenco entrega atuações magníficas, transmitindo emoções de maneira crua e envolvente. Uma experiência intensa que revela a maestria do diretor em extrair o melhor de cada personagem.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- ======================================================== -->
+  <!-- Rodape deve ficar no final -->
+    <footer class="rodape" id="rodape">
+      <!-- esquerda do rodape -->
+      <div class="rodape-esquerda">
+        <a href="https://www.formiga.ifmg.edu.br/"><img src="../imgs/if-logo.png" class="logo-ifmg"></a>
+      </div>
+
+      <!-- centro do rodape -->
+      <div class="rodape-centro">
+        <!-- imagens pros contatos -->
+        <a href=""><img src="../imgs/twitter.png" class="logo-redondo"></a>
+        <a href=""><img src="../imgs/instagram.png" class="logo-redondo"></a>
+        <a href=""><img src="../imgs/linkedin.png" class="logo-redondo"></a>
+        <p>Entre em contato conosco!</p>
+
+        <!-- clicar na logo faz voltar pro comeco da pagina -->
+        <a href="#"><img src="../imgs/logo.png"></a>
+
+        <!-- membros do time -->
+        <p>
+          Júlia Nakano <br>
+          Maria Eduarda <br>
+          Victor Luis
+        </p>
+      </div>
+
+      <!-- direita do rodape -->
+      <div class="rodape-direita">
+        <p>Trabalho desenvolvido como exigência do componente curricular Desenvolvimento web</p>
+      </div>
+    </footer>
+<!-- ======================================================== -->
+</body>
+</html>

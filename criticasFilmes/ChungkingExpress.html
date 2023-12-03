@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criticas | Dream</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- css do rodape -->
+    <link rel="stylesheet" href="../rodape.css">
+
+    <script src="../script.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+
+</head>
+
+<body class="home">
+    
+<!-- ======================================================== -->
+<!-- Nave -->
+    <nav class="navehome">
+
+    <div class="logo">
+      <a href="../home.html"><img src="../imgs/logo.png"></a>
+    </div>
+
+    <div class= "links">
+
+        <ul class="naveitens">
+            <li> <a href="../home.html">Home</a></li>
+            <li> <a href="../card-flip.html">Navegar</a></li>
+            <li> <a href="../contato.html">Contato</a></li>
+
+        </ul>
+    </div>
+    <div class="butonave">
+
+        <button> <a href="../login.html">Login</a></button>
+    </div>
+    </nav>
+<!-- ======================================================== -->
+<!-- Parte principal -->
+
+  <div class="critica-container">
+
+    <div class="critica-filme">
+      <!-- fica na parte de cima do container -->
+      <!-- mostra as partes principais -->
+      <img src="../imgs/chunFundo.png" class="critica-fundo">
+
+      <img src="../imgs/chunPoster.png" class="critica-poster">
+      <h1>Chungking Express</h1>
+
+      <div class="critica-gradient">
+        <!-- coloca um degrade -->
+      </div>
+    </div>
+
+    <div class="critica-sobre">
+      <!-- essa parte vai ter sinopse, classificacao, data de lancamento,etc -->
+      <div class="critica-sinopse">
+        <h1>Sinópse:</h1>
+        <p>"Chungking Express" é uma obra envolvente que explora as intricadas vidas de estranhos em Hong Kong. Dirigido por Wong Kar-wai, o filme apresenta duas histórias paralelas de solidão e encontros fortuitos. Ambientado nos corredores frenéticos de Chungking Mansions, o filme captura a busca por significado em meio ao caos urbano. Com uma trilha sonora cativante e visuais dinâmicos, "Chungking Express" oferece uma experiência única, mergulhando nas complexidades das relações humanas na selva de concreto.</p>
+      </div>
+      <div class="critica-info">
+        <h1>Sobre o filme:</h1>
+        <p>
+          Lançamento: 19/01/1996<br>
+          Genero: Drama<br>
+          Duração: 102min<br>
+          Direção: Wong Kar-wai<br>
+        </p>
+      </div>
+    </div>
+
+
+    <!-- nessa parte vai ficar os comentarios e reviews -->
+    <hr width="70%" style="margin: 2% auto;">
+    <h1> Comentarios:</h1>
+
+    <div class="critica-novoComentario">
+      <h4>Deixe seu comentário!</h4>
+      <textarea id="comentario" placeholder="Digite seu comentario aqui!"></textarea><br>
+      <button onclick="novoComentario();">Enviar</button>
+    </div>
+
+    <div class="critica-reviews" id="critica-reviews">
+
+      <div class="critica-comentario">
+        <h4>Gabriel</h4>
+        <p>Chungking Express é um mergulho visual e emocional no coração pulsante de Hong Kong. Wong Kar-wai tece uma tapeçaria cinematográfica única, onde a solidão se encontra com a poesia urbana de maneira extraordinária.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Clara</h4>
+        <p>Este filme é uma explosão de energia e sentimentos. A narrativa não linear e a trilha sonora hipnotizante criam uma experiência cinematográfica que permanece gravada na mente muito tempo depois que as luzes se apagam.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Giovana</h4>
+        <p>Chungking Express é uma viagem sensorial única. A maestria de Wong Kar-wai em retratar a solidão em meio à agitação urbana é simplesmente arrebatadora, deixando uma impressão duradoura que desafia as convenções do cinema convencional.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Lucas</h4>
+        <p>Assistir a Chungking Express é como entrar em um sonho cinematográfico. A estética visual ousada e a trilha sonora hipnotizante transformam cada cena em uma experiência imersiva, destacando Wong Kar-wai como um mestre da narrativa visual.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Daniel</h4>
+        <p>Chungking Express é uma obra-prima contemporânea. A forma como o filme captura a melancolia das relações humanas na cidade é sutil e ao mesmo tempo impactante, solidificando Wong Kar-wai como um cineasta visionário.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Sophia</h4>
+        <p>Este filme é um verdadeiro deleite para os sentidos. A cinematografia exuberante e as performances envolventes criam uma atmosfera hipnótica que transporta os espectadores para o coração vibrante de Hong Kong.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- ======================================================== -->
+  <!-- Rodape deve ficar no final -->
+    <footer class="rodape" id="rodape">
+      <!-- esquerda do rodape -->
+      <div class="rodape-esquerda">
+        <a href="https://www.formiga.ifmg.edu.br/"><img src="../imgs/if-logo.png" class="logo-ifmg"></a>
+      </div>
+
+      <!-- centro do rodape -->
+      <div class="rodape-centro">
+        <!-- imagens pros contatos -->
+        <a href=""><img src="../imgs/twitter.png" class="logo-redondo"></a>
+        <a href=""><img src="../imgs/instagram.png" class="logo-redondo"></a>
+        <a href=""><img src="../imgs/linkedin.png" class="logo-redondo"></a>
+        <p>Entre em contato conosco!</p>
+
+        <!-- clicar na logo faz voltar pro comeco da pagina -->
+        <a href="#"><img src="../imgs/logo.png"></a>
+
+        <!-- membros do time -->
+        <p>
+          Júlia Nakano <br>
+          Maria Eduarda <br>
+          Victor Luis
+        </p>
+      </div>
+
+      <!-- direita do rodape -->
+      <div class="rodape-direita">
+        <p>Trabalho desenvolvido como exigência do componente curricular Desenvolvimento web</p>
+      </div>
+    </footer>
+<!-- ======================================================== -->
+</body>
+</html>

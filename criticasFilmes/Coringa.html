@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criticas | Dream</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- css do rodape -->
+    <link rel="stylesheet" href="../rodape.css">
+
+    <script src="../script.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+
+</head>
+
+<body class="home">
+    
+<!-- ======================================================== -->
+<!-- Nave -->
+    <nav class="navehome">
+
+    <div class="logo">
+      <a href="../home.html"><img src="../imgs/logo.png"></a>
+    </div>
+
+    <div class= "links">
+
+        <ul class="naveitens">
+            <li> <a href="../home.html">Home</a></li>
+            <li> <a href="../card-flip.html">Navegar</a></li>
+            <li> <a href="../contato.html">Contato</a></li>
+
+        </ul>
+    </div>
+    <div class="butonave">
+
+        <button> <a href="../login.html">Login</a></button>
+    </div>
+    </nav>
+<!-- ======================================================== -->
+<!-- Parte principal -->
+
+  <div class="critica-container">
+
+    <div class="critica-filme">
+      <!-- fica na parte de cima do container -->
+      <!-- mostra as partes principais -->
+      <img src="../imgs/coringaFundo.png" class="critica-fundo">
+
+      <img src="../imgs/coringPoster.png" class="critica-poster">
+      <h1>Coringa</h1>
+
+      <div class="critica-gradient">
+        <!-- coloca um degrade -->
+      </div>
+    </div>
+
+    <div class="critica-sobre">
+      <!-- essa parte vai ter sinopse, classificacao, data de lancamento,etc -->
+      <div class="critica-sinopse">
+        <h1>Sinópse:</h1>
+        <p>Em "Coringa", somos imersos no conturbado universo de Arthur Fleck, um comediante fracassado e mentalmente instável que, em meio à decadência social de Gotham City, encontra-se à margem da sociedade. Joaquin Phoenix entrega uma atuação magistral ao explorar as complexidades da mente de Arthur, revelando a transformação do homem marginalizado em um ícone do caos conhecido como Coringa. O filme aborda temas como alienação, desigualdade social e a frágil fronteira entre sanidade e loucura, proporcionando uma narrativa intensa e perturbadora que deixa uma marca duradoura na psique do espectador.</p>
+      </div>
+      <div class="critica-info">
+        <h1>Sobre o filme:</h1>
+        <p>
+          Lançamento: 03/10/2019 <br>
+          Genero: Suspense Psicológico<br>
+          Duração: 122min<br>
+          Direção: Todd Phillips<br>
+        </p>
+      </div>
+    </div>
+
+
+    <!-- nessa parte vai ficar os comentarios e reviews -->
+    <hr width="70%" style="margin: 2% auto;">
+    <h1> Comentarios:</h1>
+
+    <div class="critica-novoComentario">
+      <h4>Deixe seu comentário!</h4>
+      <textarea id="comentario" placeholder="Digite seu comentario aqui!"></textarea><br>
+      <button onclick="novoComentario();">Enviar</button>
+    </div>
+
+    <div class="critica-reviews" id="critica-reviews">
+
+      <div class="critica-comentario">
+        <h4>Camila</h4>
+        <p>Joaquin Phoenix entrega uma performance simplesmente arrebatadora como o Coringa, mergulhando nas profundezas da psique humana. 'Coringa' é uma obra-prima sombria e provocativa que desafia as convenções dos filmes de super-heróis.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Carolina</h4>
+        <p>Coringa' é um soco no estômago cinematográfico. A narrativa visceral e a cinematografia impressionante capturam a essência perturbadora do personagem, proporcionando uma experiência cinematográfica única e inesquecível.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Amanda</h4>
+        <p>O filme é uma reflexão inquietante sobre a sociedade e suas falhas, com Joaquin Phoenix desempenhando o papel principal de maneira magistral. 'Coringa' não é apenas um filme de super-herói; é um estudo profundo da condição humana.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>João</h4>
+        <p>A trilha sonora e a direção de arte elevam 'Coringa' a um nível cinematográfico superior. Phoenix mergulha nas nuances do personagem, oferecendo uma visão perturbadora e cativante do famoso vilão.</p>
+      </div>
+
+      <div class="critica-comentario">
+        <h4>Eduardo</h4>
+        <p>A abordagem crua e realista de Todd Phillips sobre a origem do Coringa é uma lufada de ar fresco no gênero de super-heróis. 'Coringa' desafia as expectativas e deixa uma impressão duradoura pela sua intensidade e profundidade emocional.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- ======================================================== -->
+  <!-- Rodape deve ficar no final -->
+    <footer class="rodape" id="rodape">
+      <!-- esquerda do rodape -->
+      <div class="rodape-esquerda">
+        <a href="https://www.formiga.ifmg.edu.br/"><img src="../imgs/if-logo.png" class="logo-ifmg"></a>
+      </div>
+
+      <!-- centro do rodape -->
+      <div class="rodape-centro">
+        <!-- imagens pros contatos -->
+        <a href=""><img src="../imgs/twitter.png" class="logo-redondo"></a>
+        <a href=""><img src="../imgs/instagram.png" class="logo-redondo"></a>
+        <a href=""><img src="../imgs/linkedin.png" class="logo-redondo"></a>
+        <p>Entre em contato conosco!</p>
+
+        <!-- clicar na logo faz voltar pro comeco da pagina -->
+        <a href="#"><img src="../imgs/logo.png"></a>
+
+        <!-- membros do time -->
+        <p>
+          Júlia Nakano <br>
+          Maria Eduarda <br>
+          Victor Luis
+        </p>
+      </div>
+
+      <!-- direita do rodape -->
+      <div class="rodape-direita">
+        <p>Trabalho desenvolvido como exigência do componente curricular Desenvolvimento web</p>
+      </div>
+    </footer>
+<!-- ======================================================== -->
+</body>
+</html>
