@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criticas | Dream</title>
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../critica.css">
     <!-- css do rodape -->
     <link rel="stylesheet" href="../rodape.css">
@@ -23,31 +24,29 @@
 <body class="home">
     
 <!-- ======================================================== -->
-<!-- Nave -->
+<!-- Nave navbar-expand-lg fixed-top-->
     <nav class="navehome">
 
-    <div class="logo"> <img src="../img/logo.png"> </div>
+    <div class="logo">
+      <a href="../home.html"><img src="../imgs/logo.png"></a>
+    </div>
 
-    <div class= "links">
+    <div class="links">
 
         <ul class="naveitens">
             <li> <a href="../home.html">Home</a></li>
-            <li> <a href="../navegar.html">Navegar</a></li>
+            <li> <a href="../card-flip.html">Navegar</a></li>
             <li> <a href="../contato.html">Contato</a></li>
 
         </ul>
     </div>
     <div class="butonave">
-
-        <button> <a href="../login.html">Login</a></button>
+        <a href="../login.html"> <button> Login </button> </a>
     </div>
-    <form class="d-flex" role="search"> <!--campo de pesquisar + scritp la embaixo-->
-      <input type="text" id="searchInput" name="searchInput" placeholder="Digite aqui para pesquisar" aria-label="Search" size="30">
-      <button type="button" class="btn btn-outline-light" onclick="search()">Buscar</button>
-      <ul id="results"></ul>
-  </form>
-    </nav>
+
+  </nav>
 <!-- ======================================================== -->
+
 <!-- Parte principal -->
 
   <div class="critica-container">
