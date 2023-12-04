@@ -6,45 +6,43 @@
     <link rel="stylesheet" href="rodape.html">
     <link rel="icon" href="imgs/logo.png"> 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contatp.css.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    
 </head>
-<body>
+<body style="text-align: center; background: #220000;">
+<!-- ======================================================== -->
+<!-- Nave navbar-expand-lg fixed-top-->
     <nav class="navehome">
-        <div class="logo"> <img src="imgs/logo.png"> </div>
-        <div class="links">
-            <ul class="naveitens">
-                <li> <a href="home.html">Home</a></li>
-                <li> <a href="card-flip.html">Navegar</a></li>
-                <li> <a href="contato.html">Contato</a></li>
-            </ul>
-        </div>
-        <div class="butonave">
-            <button> <a href="../login.html">Login</a></button>
-        </div>
-        <form class="d-flex" role="search">
-            <input type="text" id="searchInput" name="searchInput" placeholder="Digite aqui para pesquisar" aria-label="Search" size="30">
-            <button type="button" class="btn btn-outline-light" onclick="search()">Buscar</button>
-            <ul id="results"></ul>
-        </form>
-    </nav>
-    <!--nav-->
-    <div class="panel-container">
-        <img src="imgs/capyara.png" alt="Image" />
-        <div class="form-container">
-            <center> <b>Não perca nossas novidades! Fique com a DREAM. </b> 
-            <br>
-            Críticas novas toda semana <br />direto no seu e-mail. 
-            </center>
-            <form>
-                <input type="email" placeholder="Digite seu @e-mail.com" id="email" />
-                <button class="btn btn-outline-danger" type="button"> Mantenha-se inspirado</button>
-            </form>
-            <center> <small>Tire sua inscrição a qualquer. </small></center>
+
+    <div class="logo">
+      <a href="home.html"><img src="imgs/logo.png"></a>
+    </div>
+
+    <div class="links">
+
+        <ul class="naveitens">
+            <li> <a href="home.html">Home</a></li>
+            <li> <a href="card-flip.html">Navegar</a></li>
+            <li> <a href="contato.html">Contato</a></li>
+
+        </ul>
+    </div>
+    <div class="butonave">
+        <a href="login.html"> <button> Login </button> </a>
+    </div>
+
+  </nav>
+<!-- ======================================================== -->
+<!-- Parte principal -->
+    <div class="contato-container">
+        <img src="imgs/capyara.png" alt="Image">
+
+        <div class="contato-contatos">
+            <h1>Mantenha contato conosco!</h1>
+            <p>Email: DreamMVJ@gmail.com</p>
         </div>
     </div>
 
@@ -57,6 +55,7 @@
         });
     </script>
 
+  <!-- ======================================================== -->
     <!-- Rodape deve ficar no final -->
     <footer class="rodape" id="rodape">
         <!-- esquerda do rodape -->

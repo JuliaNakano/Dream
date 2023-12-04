@@ -245,6 +245,54 @@
   display: flex;
 }
 /*=================================================*/
+/*Usados na Página de Contato*/
+
+.contato-container{
+    background: #282828;
+    border-radius: 10px;
+    width: 90vw;
+    height: 60vh;
+    margin: 8px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.contato-contatos{
+    border-radius: 10px;
+    background: #111;
+    margin: 0 5%;
+    padding: 10% 0;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 90%;
+    min-height: 75%;
+    width: 65%;
+    box-sizing: border-box;
+
+}
+
+.contato-contatos h1{
+    font-family: Lato, Inter, sans-serif;
+
+} 
+
+.contato-contatos p{
+    font-family: Lato, Inter, sans-serif;
+
+} 
+
+.contato-container img{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: auto;
+    width: 25%;
+}
+/*=================================================*/
 /*Logo do nav*/
 .cabecalho{
 /*parte de cima da pagina*/
@@ -349,12 +397,14 @@ border-radius:  23px, black;
 
 /*Deixar a nave responsiva*/
 .navehome{
+    height: 10vh;
     overflow: auto;
     display: flex;
     justify-content: space-evenly;
     font-family: "Roboto",sans-serif;
     margin: 8px;
     align-items: center;
+    overflow: hidden;
 
     background: #000000;
     color:white;
